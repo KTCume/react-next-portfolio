@@ -6,19 +6,19 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-  }
-  
-  .logoLink {
+}
+
+.logoLink {
     display: flex;
-  }
-  
-  .logo {
+}
+
+.logo  {
     height: 24px;
     width: auto;
-  }
-  
-  @media (max-width: 640px) {
+}
+
+@media (max-width: 640px) {
     .header {
-      padding: 24px 16px 8px;
+        padding: 24px 16px 8px;
     }
-  }
+}
