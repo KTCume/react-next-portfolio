@@ -25,6 +25,9 @@ export default function Menu() {
           <li>
             <Link href="/contact">お問い合わせ</Link>
           </li>
+          <li>
+            <Link href="/about-me">about-me</Link>
+          </li>
         </ul>
         <button className={cx(styles.button, styles.close)} onClick={close}>
           <Image

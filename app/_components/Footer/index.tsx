@@ -15,6 +15,9 @@ export default function Footer() {
                     <li className="styles.item">
                         <Link href="/contact">お問い合わせ</Link>
                     </li>
+                    <li className="styles.item">
+                        <Link href="/about-me">お問い合わせ</Link>
+                    </li>
                 </ul>
             </nav>
             <p className={styles.cr}>©︎ SIMPLE. All Rights Reserved 2024</p>
