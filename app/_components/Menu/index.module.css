@@ -1,45 +1,75 @@
 .items {
-    display: flex;
-    color: #000000;
-    gap: 40px;
-  }
-  
-  .button {
+  display: flex;
+  color: #000000;
+  gap: 40px;
+}
+
+.items li {
+  position: relative;
+  overflow: hidden;
+}
+
+.items li a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+.items li:hover a {
+  color: #ff5733; /* ホバー時の文字色 */
+}
+
+.items li::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ff5733; /* 下線の色 */
+  transition: width 0.3s ease;
+}
+
+.items li:hover::after {
+  width: 100%; /* ホバー時に下線が表示 */
+}
+
+.button {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .nav {
     display: none;
   }
-  
-  @media (max-width: 640px) {
-    .nav {
-      display: none;
-    }
-  
-    .nav.open {
-      display: block;
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-color: var(--color-bg-painted);
-      color: var(--color-text-unpainted);
-      padding: 24px 16px;
-    }
-  
-    .items {
-      flex-direction: column;
-      gap: 24px;
-    }
-  
-    .button {
-      display: flex;
-      background: none;
-      border: none;
-      cursor: pointer;
-    }
-  
-    .close {
-      position: absolute;
-      top: 24px;
-      right: 16px;
-    }
+
+  .nav.open {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--color-bg-painted);
+    color: var(--color-text-unpainted);
+    padding: 24px 16px;
   }
+
+  .items {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .button {
+    display: flex;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .close {
+    position: absolute;
+    top: 24px;
+    right: 16px;
+  }
+}
