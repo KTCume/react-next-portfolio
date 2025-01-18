@@ -1,6 +1,6 @@
 .items {
   display: flex;
-  color: #ffffff;
+  color: #e0e0e0; /* 少し明るめの文字色に変更 */
   gap: 40px;
 }
 
@@ -12,26 +12,28 @@
 .items li a {
   text-decoration: none;
   color: inherit;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .items li:hover a {
-  color: #ff5733; /* ホバー時の文字色 */
+  color: #ffcc66; /* 見やすく目に優しい明るいオレンジ */
+  transform: translateY(-2px); /* ホバー時に文字が少し浮く */
 }
 
 .items li::after {
   content: '';
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: 50%;
   width: 0;
   height: 2px;
-  background-color: #ff5733; /* 下線の色 */
-  transition: width 0.3s ease;
+  background: linear-gradient(90deg, #ffcc66, #66ccff); /* 明るく爽やかなグラデーションに変更 */
+  transition: width 0.4s ease, left 0.4s ease; /* スムーズにアニメーション */
 }
 
 .items li:hover::after {
   width: 100%; /* ホバー時に下線が表示 */
+  left: 0; /* 左から広がるように */
 }
 
 .button {
@@ -50,8 +52,8 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: var(--color-bg-painted);
-    color: var(--color-text-unpainted);
+    background-color: #1a1a1a; /* ダークグレーで背景を落ち着かせる */
+    color: #e0e0e0; /* 明るめの文字色でコントラストを強調 */
     padding: 24px 16px;
   }
 
