@@ -6,27 +6,31 @@ import { useState } from 'react';
 import cx from 'classnames';
 import styles from './index.module.css';
 
-
 export default function Menu() {
   const [isOpen, setOpen] = useState<boolean>(false);
   const open = () => setOpen(true);
   const close = () => setOpen(false);
+
+  // リンクがクリックされたときにメニューを閉じる関数
+  const handleLinkClick = () => {
+    setOpen(false);
+  };
 
   return (
     <div>
       <nav className={cx(styles.nav, isOpen && styles.open)}>
         <ul className={styles.items}>
           <li>
-            <Link href="/about-me">自己紹介</Link>
+            <Link href="/about-me" onClick={handleLinkClick}>自己紹介</Link>
           </li>
           <li>
-            <Link href="/news">ブログ</Link>
+            <Link href="/news" onClick={handleLinkClick}>ブログ</Link>
           </li>
           <li>
-            <Link href="/hobbies">趣味</Link>
+            <Link href="/hobbies" onClick={handleLinkClick}>趣味</Link>
           </li>
           <li>
-            <Link href="/contact">お問い合わせ</Link>
+            <Link href="/contact" onClick={handleLinkClick}>お問い合わせ</Link>
           </li>
         </ul>
         <button className={cx(styles.button, styles.close)} onClick={close}>
