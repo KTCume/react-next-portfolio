@@ -1,11 +1,9 @@
 .button {
     display: block;
     padding: 20px 40px;
-    border-radius: var(--border-radius);
+    border-radius: 14px;
     width: 300px;
-    background:
-    url("/arrow-right.svg") no-repeat right 20px center,
-    var(--color-button-primary);
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
     color: var(--color-text-unpainted);
 }
 
