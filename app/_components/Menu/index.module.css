@@ -60,6 +60,7 @@
   .items {
     flex-direction: column;
     gap: 24px;
+    text-align: center;
   }
 
   .button {
