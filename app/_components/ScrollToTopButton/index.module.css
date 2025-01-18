@@ -1,0 +1,36 @@
+.scrollToTopButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #3498db; /* ボタンの背景色 */
+  color: #fff; /* ボタン内のテキスト色 */
+  border: none;
+  border-radius: 50%; /* 丸い形 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0; /* 初期状態で非表示 */
+  transform: translateY(100px); /* 初期状態で画面外に配置 */
+  z-index: 1000; /* 他の要素の上に表示 */
+}
+
+.scrollToTopButton.visible {
+  opacity: 1; /* スクロール時に表示 */
+  transform: translateY(0); /* ボタンを画面内に移動 */
+}
+
+.scrollToTopButton:hover {
+  background-color: #2980b9; /* ホバー時に色を少し暗く */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.scrollToTopButton:focus {
+  outline: none; /* フォーカス時のアウトラインを非表示 */
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.5); /* フォーカス時のハイライト */
+}

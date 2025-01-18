@@ -2,7 +2,7 @@ import Image from "next/image";
 import { getMembersList } from "@/app/_libs/microcms";
 import { MEMBERS_LIST_LIMIT } from "@/app/_constants";
 import styles from "./page.module.css";
-
+import ScrollToTopButton from "@/app/_components/ScrollToTopButton";
 
 
 export default async function Page() {
@@ -31,6 +31,7 @@ export default async function Page() {
                     ))}
                 </ul>
             )}
+            <ScrollToTopButton />
         </div>
     );
 }
