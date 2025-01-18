@@ -12,6 +12,7 @@
 .items li a {
   text-decoration: none;
   color: inherit;
+  font-size: 18px;
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
@@ -52,14 +53,15 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #1a1a1a; /* ダークグレーで背景を落ち着かせる */
+    background: linear-gradient(135deg, #1a1a1a, #333333); /* グラデーション背景で高級感を追加 */
     color: #e0e0e0; /* 明るめの文字色でコントラストを強調 */
     padding: 24px 16px;
+    font-weight: bold;
   }
 
   .items {
     flex-direction: column;
-    gap: 24px;
+    gap: 30px;
     text-align: center;
   }
 
