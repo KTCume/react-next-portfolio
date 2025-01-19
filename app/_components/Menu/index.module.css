@@ -1,3 +1,18 @@
+/* メニューのロゴ部分 */
+.logoContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px; /* メニューアイテムとの間隔 */
+  margin-top: 20px; /* ロゴが上に寄り過ぎないように少し余白を追加 */
+}
+
+.logoContainer img {
+  height: 60px;  /* ロゴの高さを設定 */
+  width: 60px;   /* ロゴの幅を設定 */
+  object-fit: contain;  /* アスペクト比を保ちながら収める */
+}
+
+
 .items {
   display: flex;
   color: #e0e0e0; /* 少し明るめの文字色に変更 */
@@ -63,6 +78,16 @@
     flex-direction: column;
     gap: 30px;
     text-align: center;
+  }
+
+  /* ロゴ部分の表示/非表示を制御 */
+  .logoContainer {
+    display: none; /* デフォルトで非表示 */
+  }
+
+  .nav.open .logoContainer {
+    display: flex; /* メニューが開かれているときに表示 */
+    margin-top: 30px;  /* メニュー内でロゴが上部に寄らないように調整 */
   }
 
   .button {
