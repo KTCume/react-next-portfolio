@@ -1,8 +1,10 @@
 .list {
-    border-bottom: 1px solid var(--color-border-light);
+    border-bottom: 1px solid #ccc; /* 柔らかいグレー */
+    padding-bottom: 8px;
 }
 .list:last-child {
-    border-bottom:  none;
+    border-bottom: none;
+    padding-bottom: 0;
 }
 
 .link {
@@ -10,24 +12,40 @@
     align-items: flex-start;
     gap: 40px;
     padding: 24px 0;
+    border-radius: 8px; /* 初期状態の丸み */
+    transition: background-color 0.3s ease, transform 0.2s ease, border-radius 0.3s ease;
+}
+
+.link:hover {
+    background-color: #f9f9f9; /* 明るい背景でホバー効果 */
+    transform: translateY(-2px);
+    border-radius: 16px; /* ホバー時に丸みを強調 */
 }
 
 .image {
     width: 200px;
     height: auto;
-    border-radius: var(--border-radius);
+    border-radius: 12px; /* 少し丸みを追加 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.tittle {
-    font-size: 1.1rem;
+.title {
+    font-size: 1.2rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
+    color: #4a90e2; /* 柔らかいブルー */
+    transition: color 0.3s ease;
+}
+.title:hover {
+    color: #0066cc; /* 濃いブルーでアクセント */
 }
 
 .meta {
     display: flex;
     align-items: center;
-    gap: 16px
+    gap: 16px;
+    font-size: 0.9rem;
+    color: #666; /* 中間グレーで落ち着いた印象 */
 }
 
 
@@ -40,8 +58,8 @@
         display: none;
     }
 
-    .title  {
-        font-size: 1rem;
+    .title {
+        font-size: 1.1rem;
         font-weight: bold;
         margin-bottom: 0.4rem;
     }
@@ -49,6 +67,7 @@
     .meta {
         display: flex;
         align-items: center;
-        gap: 16px;
+        gap: 12px;
+        font-size: 0.85rem;
     }
 }
