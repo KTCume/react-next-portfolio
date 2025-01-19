@@ -7,20 +7,20 @@ export default function Footer() {
             <nav className={styles.nav}>
                 <ul className={styles.items}>
                     <li className="styles.item">
-                        <Link href="/news">ニュース</Link>
+                        <Link href="/about-me">自己紹介</Link>
                     </li>
                     <li className="styles.item">
-                        <Link href="/hobbies">メンバー</Link>
+                        <Link href="/news">ブログ</Link>
+                    </li>
+                    <li className="styles.item">
+                        <Link href="/hobbies">趣味</Link>
                     </li>
                     <li className="styles.item">
                         <Link href="/contact">お問い合わせ</Link>
                     </li>
-                    <li className="styles.item">
-                        <Link href="/about-me">お問い合わせ</Link>
-                    </li>
                 </ul>
             </nav>
-            <p className={styles.cr}>©︎ SIMPLE. All Rights Reserved 2024</p>
+            <p className={styles.cr}>©︎ Portfolio Site 2025</p>
         </footer>
     );
 }
