@@ -16,7 +16,7 @@ export default async function Home() {
     <div>
       <h1 className={styles.title}>梅井太貴</h1>
       <p className={styles.description}>
-        私たちは市場をリードしているグローバルテックカンパニーです。
+        ポートフォリオサイトです。
       </p>
     </div>
     <Image
