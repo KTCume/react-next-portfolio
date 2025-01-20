@@ -1,0 +1,79 @@
+/* ウィジェットアイテムのスタイル */
+.widgetItem {
+  width: 100%; /* 親要素の幅に合わせる */
+  height: 320px;
+  background-color: #ffffff; /* 明るい背景 */
+  border-radius: 16px; /* 角を丸く */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); /* ソフトな影で浮き上がるように */
+  padding: 20px;
+  font-size: 16px;
+  color: #333333; /* 濃い灰色 */
+  text-align: center;
+  overflow: hidden; /* アイテムの中身がはみ出さないように */
+}
+
+.imageWrapper {
+  width: 100%;
+  height: 180px; /* 画像の高さを大きめに */
+  margin-bottom: 20px; /* 画像とテキストの間にスペース */
+  border-radius: 12px; /* 画像の角も丸く */
+  overflow: hidden; /* 画像が枠をはみ出さないように */
+  position: relative; /* 画像にオーバーレイや効果を追加するため */
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* 画像に影を追加 */
+}
+
+.text {
+  font-size: 14px;
+  color: #555555; /* テキストの色をやや明るく */
+  line-height: 1.5;
+  margin-top: 10px;
+}
+
+/* ウィジェットのリスト */
+.widgetList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3列に設定 */
+  gap: 20px;
+  margin-top: 30px;
+  padding: 0 20px;
+}
+
+/* セクションのスタイル */
+.top {
+  text-align: center;
+  padding: 40px 0;
+  border-bottom: 4px solid #00796b; /* セクションの下にアクセントライン */
+}
+
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #00796b;
+  margin-bottom: 30px;
+  text-transform: uppercase; /* タイトルに大文字のスタイル */
+  letter-spacing: 2px; /* 文字間隔を広げてスタイリッシュに */
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+  .widgetList {
+    grid-template-columns: repeat(2, 1fr); /* 画面幅が768px以下で2列 */
+  }
+}
+
+@media (max-width: 480px) {
+  .widgetList {
+    grid-template-columns: 1fr; /* 画面幅が480px以下で1列 */
+  }
+}
