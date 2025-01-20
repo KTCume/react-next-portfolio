@@ -1,29 +1,60 @@
+/* フッターの基本デザイン */
 .footer {
-    padding: 16px 24px;
+    padding: 60px 50px; /* 上下のパディングを増やして高さを調整 */
+    background: linear-gradient(145deg, #1a1a1a, #333); /* グラデーションを使って深みを出す */
+    color: #f4f4f4; /* 文字色をやや明るくして、背景とのコントラストを調整 */
     text-align: center;
-    color: var(--color-text-sub);
-    font-size: 0.8rem;
+    font-size: 1rem;
     margin-top: 80px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2); /* 透明感のある細い境界線 */
+    position: relative;
+    border-radius: 10px 10px 0 0; /* フッターの角を丸くして優雅に */
 }
 
+/* ナビゲーションスタイル */
 .nav {
-    margin-bottom: 16px;
+    margin-bottom: 40px; /* ナビゲーションとコピーライトの間にスペースを増加 */
 }
 
 .items {
     display: flex;
     justify-content: center;
     gap: 40px;
-    font-size: 1rem;
+    font-size: 1.1rem;
     white-space: nowrap;
+    letter-spacing: 0.5px; /* 文字間隔を広げて読みやすく */
 }
 
+.item {
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* リンクのデザイン */
+.items a {
+    color: #f4f4f4;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+}
+
+/* リンクホバー時 */
+.items a:hover {
+    color: #ddceb5; /* ゴールド色に変化 */
+}
+
+/* スマホ用レスポンシブデザイン */
 @media (max-width: 640px) {
     .items {
-        flex-wrap: wrap;
-        gap: 8px 0;
+        flex-wrap: wrap; /* 要素を折り返し可能に */
+        gap: 20px; /* 要素間の余白を調整 */
+        justify-content: center; /* 要素を中央揃え */
     }
     .item {
-        width: 50%;
+        width: 100%; /* 各アイテムを1行に */
+        text-align: center; /* テキストを中央揃え */
+    }
+    .items a {
+        font-size: 1rem; /* モバイル向けに文字サイズを調整 */
     }
 }
