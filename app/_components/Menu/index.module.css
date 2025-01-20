@@ -15,7 +15,7 @@
 
 .items {
   display: flex;
-  color: #ffffff; /* 少し明るめの文字色に変更 */
+  color: #eae9e9; /* 少し明るめの文字色に変更 */
   gap: 40px;
 }
 
