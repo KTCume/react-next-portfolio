@@ -4,7 +4,6 @@ import { getNewsList } from "@/app/_libs/microcms";
 import { TOP_NEWS_LIMIT } from "@/app/_constants";
 import NewsList from "@/app/_components/NewsList";
 import ButtonLink from "@/app/_components/ButtonLink";
-import ScrollToTopButton from "./_components/ScrollToTopButton";
 
 export default async function Home() {
   const data = await getNewsList({
@@ -46,7 +45,6 @@ export default async function Home() {
           <ButtonLink href="/hobbies">プロフィールを見る</ButtonLink>
         </div>
       </section>
-      <ScrollToTopButton />
     </>
   ); 
 }
