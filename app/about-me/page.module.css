@@ -16,10 +16,6 @@
     transition: transform 0.3s;
 }
 
-.top:hover {
-    transform: translateY(-8px);
-}
-
 /* タイトル */
 .title {
     font-size: 2.5rem;
