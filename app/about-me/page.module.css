@@ -10,20 +10,21 @@
     margin-top: 90px;
     width: 90%;
     max-width: 800px;
-    background: linear-gradient(135deg, #e0e7ff, #c7d2fe);
-    border-radius: 20px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-    transition: transform 0.3s;
+    background: linear-gradient(135deg, #dbeafe, #f0f4ff);
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* タイトル */
 .title {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 32px;
-    color: #1e3a8a;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-    letter-spacing: 0.5px;
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 36px;
+    color: #1d4ed8;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
+    letter-spacing: 1.2px;
+    line-height: 1.2;
     animation: fadeIn 1s ease-in-out;
 }
 
@@ -33,42 +34,69 @@
     padding: 0;
     margin: 0;
     width: 100%;
-    max-width: 600px;
-    background: #ffffff;
-    border-radius: 16px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 650px;
+    background: linear-gradient(135deg, #ffffff, #f3f4f6);
+    border-radius: 25px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    animation: slideUp 0.8s ease-out;
+    border: 1px solid #e5e7eb;
+    animation: slideUp 1.2s ease-out;
 }
 
 /* プロフィールアイテム */
 .profileItem {
-    font-size: 1.3rem;
-    padding: 20px 28px;
-    color: #4b5563;
-    border-bottom: 1px solid #e5e7eb;
-    transition: background-color 0.4s ease, color 0.4s ease, transform 0.2s;
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding: 24px 32px;
+    color: #374151;
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 18px;
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    position: relative;
 }
 
+/* 最後のアイテムのボーダーを削除 */
 .profileItem:last-child {
     border-bottom: none;
 }
 
-/* アイコンのスタイル（オプション） */
+/* アイコンのスタイル */
 .profileItem::before {
-    content: '\2022'; /* デフォルトのドット */
-    color: #6b7280;
-    font-size: 1.5rem;
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #3b82f6, #60a5fa);
+    flex-shrink: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* 背景のアクセント */
+.profileItem:nth-child(odd) {
+    background: linear-gradient(135deg, #f9fafb, #f5f7fa);
+}
+
+/* 背景装飾の追加 */
+.profileItem::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 80%;
+    background: linear-gradient(135deg, #60a5fa, #3b82f6);
+    border-radius: 10px;
 }
 
 /* アニメーション */
 @keyframes fadeIn {
     from {
         opacity: 0;
-        transform: translateY(-20px);
+        transform: translateY(-30px);
     }
     to {
         opacity: 1;
@@ -79,7 +107,7 @@
 @keyframes slideUp {
     from {
         opacity: 0;
-        transform: translateY(20px);
+        transform: translateY(40px);
     }
     to {
         opacity: 1;

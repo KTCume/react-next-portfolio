@@ -42,7 +42,7 @@ export default async function Home() {
           私は梅井太貴です。ITエンジニアとして、さまざまなプロジェクトに取り組んでいます。このサイトでは、私の作品やブログをご覧いただけます。
         </p>
         <div className={styles.profileLink}>
-          <ButtonLink href="/hobbies">プロフィールを見る</ButtonLink>
+          <ButtonLink href="/about-me">プロフィールを見る</ButtonLink>
         </div>
       </section>
     </>
