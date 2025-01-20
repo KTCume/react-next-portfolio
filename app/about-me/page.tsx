@@ -1,7 +1,7 @@
-import ButtonLink from "../_components/ButtonLink";
+import styles from "./page.module.css";
 
 export default function Page() {
     return(
-        <h1>プロフィール</h1>
+        <h1 className={styles.title}>プロフィール</h1>
     );
 }; 
