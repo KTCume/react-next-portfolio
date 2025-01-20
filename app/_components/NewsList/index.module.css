@@ -1,73 +1,76 @@
+/* 全体スタイル */
 .list {
-    border-bottom: 1px solid #ccc; /* 柔らかいグレー */
-    padding-bottom: 8px;
-}
-.list:last-child {
-    border-bottom: none;
+    border: none;
+    margin-bottom: 16px;
     padding-bottom: 0;
 }
 
 .link {
     display: flex;
-    align-items: flex-start;
-    gap: 40px;
-    padding: 24px 0;
-    border-radius: 8px; /* 初期状態の丸み */
-    transition: background-color 0.3s ease, transform 0.2s ease, border-radius 0.3s ease;
+    align-items: center;
+    gap: 24px;
+    padding: 16px;
+    background-color: #ffffff; /* 背景色を白に変更 */
+    border-left: 4px solid #4a90e2; /* 左側のアクセントライン */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* 軽めのシャドウ */
+    transition: background-color 0.2s ease, transform 0.2s ease; /* トランジションを追加 */
 }
 
 .link:hover {
-    background-color: #f9f9f9; /* 明るい背景でホバー効果 */
-    transform: translateY(-2px);
-    border-radius: 16px; /* ホバー時に丸みを強調 */
+    background-color: #f8f8f8; /* ホバー時に軽く色が変わる */
+    transform: translateY(-2px); /* 軽く浮き上がるエフェクト */
 }
 
 .image {
-    width: 200px;
+    width: 150px;
     height: auto;
-    border-radius: 12px; /* 少し丸みを追加 */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 軽いシャドウ */
+    object-fit: cover; /* 画像が枠にぴったり収まる */
 }
 
 .title {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-    color: #4a90e2; /* 柔らかいブルー */
-    transition: color 0.3s ease;
+    font-size: 1.3rem; /* タイトルを少し大きく */
+    font-weight: 600;
+    margin-bottom: 8px; /* マージンを少し増やす */
+    color: #333; /* ダークグレー */
+    transition: color 0.2s ease;
 }
+
 .title:hover {
-    color: #0066cc; /* 濃いブルーでアクセント */
+    color: #4a90e2; /* アクセントブルー */
 }
 
 .meta {
     display: flex;
     align-items: center;
-    gap: 16px;
-    font-size: 0.9rem;
-    color: #666; /* 中間グレーで落ち着いた印象 */
+    gap: 12px;
+    font-size: 0.9rem; /* メタ情報を少し大きく */
+    color: #777; /* グレーを少し明るく */
 }
 
-
+/* モバイル対応スタイル */
 @media (max-width: 640px) {
     .link {
         display: block;
-        padding: 16px 0;
+        padding: 14px;
+        border-left: 4px solid #4a90e2; /* モバイルでも左線を維持 */
+        border-radius: 8px;
     }
+    
     .image {
-        display: none;
+        width: 100%;
+        border-radius: 8px;
+        margin-bottom: 12px; /* マージンを少し増やす */
     }
 
     .title {
-        font-size: 1.1rem;
-        font-weight: bold;
-        margin-bottom: 0.4rem;
+        font-size: 1.2rem;
+        margin-bottom: 8px;
     }
 
     .meta {
-        display: flex;
-        align-items: center;
-        gap: 12px;
         font-size: 0.85rem;
     }
 }
