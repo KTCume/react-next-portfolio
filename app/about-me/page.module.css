@@ -4,110 +4,111 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 48px 16px;
+    padding: 64px 24px;
     text-align: center;
-    margin: 40px auto;
-    margin-top: 90px;
+    margin: 50px auto;
     width: 90%;
-    max-width: 800px;
-    background: linear-gradient(135deg, #dbeafe, #f0f4ff);
-    border-radius: 30px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    max-width: 850px;
+    background: linear-gradient(145deg, #e8f0fe, #ffffff);
+    border-radius: 40px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15), inset 0 2px 8px rgba(255, 255, 255, 0.8);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 /* タイトル */
 .title {
-    font-size: 3rem;
-    font-weight: 800;
-    margin-bottom: 36px;
-    color: #1d4ed8;
-    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
-    letter-spacing: 1.2px;
-    line-height: 1.2;
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin-bottom: 40px;
+    color: #1e40af; /* 深い青で高級感 */
+    text-shadow: 0px 5px 10px rgba(30, 64, 175, 0.2);
+    letter-spacing: 1.5px;
+    line-height: 1.1;
+    font-family: 'Poppins', sans-serif; /* スタイリッシュなフォント */
     animation: fadeIn 1s ease-in-out;
 }
 
 /* プロフィールリスト全体 */
 .profileList {
     list-style: none;
-    padding: 0;
+    padding: 20px;
     margin: 0;
     width: 100%;
-    max-width: 650px;
-    background: linear-gradient(135deg, #ffffff, #f3f4f6);
-    border-radius: 25px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    border: 1px solid #e5e7eb;
-    animation: slideUp 1.2s ease-out;
+    max-width: 750px;
+    background: linear-gradient(145deg, #f5f7fa, #ffffff);
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1), inset 0 1px 6px rgba(255, 255, 255, 0.8);
+    display: flex;
+    flex-direction: column;
+    gap: 0; /* 隙間をなくす */
+    overflow: hidden; /* アイテムがはみ出さないように */
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 /* プロフィールアイテム */
 .profileItem {
     font-size: 1.4rem;
-    font-weight: 500;
-    padding: 24px 32px;
-    color: #374151;
+    font-weight: 600;
+    padding: 28px 40px;
+    color: #374151; /* 視認性の良い落ち着いた色 */
     display: flex;
     align-items: center;
-    gap: 18px;
-    background: #ffffff;
-    border-bottom: 1px solid #e5e7eb;
+    gap: 20px;
     position: relative;
+    border-radius: 0; /* 一体感を出すために角をなくす */
+    background: linear-gradient(145deg, #ffffff, #f1f5f9);
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.05); /* アイテムごとの区切り線 */
+    transition: background 0.3s ease;
+    font-family: 'Roboto', sans-serif; /* 落ち着いたフォント */
 }
 
-/* 最後のアイテムのボーダーを削除 */
-.profileItem:last-child {
-    border-bottom: none;
+/* アイテムの背景を交互に変化 */
+.profileItem:nth-child(odd) {
+    background: linear-gradient(145deg, #f3f6fa, #ffffff);
 }
 
 /* アイコンのスタイル */
 .profileItem::before {
     content: '';
     display: block;
-    width: 16px;
-    height: 16px;
+    width: 28px;
+    height: 28px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #3b82f6, #60a5fa);
+    background: linear-gradient(145deg, #1d4ed8, #3b82f6);
     flex-shrink: 0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
 }
 
-/* 背景のアクセント */
-.profileItem:nth-child(odd) {
-    background: linear-gradient(135deg, #f9fafb, #f5f7fa);
-}
-
-/* 背景装飾の追加 */
-.profileItem::after {
+/* 背景装飾：全体の境界装飾 */
+.profileList::before {
     content: '';
     position: absolute;
-    top: 50%;
+    inset: 0;
+    border: 2px dashed rgba(30, 64, 175, 0.1);
+    border-radius: 30px;
+    pointer-events: none;
+}
+
+/* 全体のグラデーションライン */
+.profileList::after {
+    content: '';
+    position: absolute;
+    top: 0;
     left: 0;
-    transform: translateY(-50%);
-    width: 4px;
-    height: 80%;
-    background: linear-gradient(135deg, #60a5fa, #3b82f6);
-    border-radius: 10px;
+    height: 4px;
+    width: 100%;
+    background: linear-gradient(to right, #3b82f6, #60a5fa, #1d4ed8);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 4px 4px 0 0;
 }
 
 /* アニメーション */
 @keyframes fadeIn {
     from {
         opacity: 0;
-        transform: translateY(-30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes slideUp {
-    from {
-        opacity: 0;
-        transform: translateY(40px);
+        transform: translateY(-20px);
     }
     to {
         opacity: 1;
