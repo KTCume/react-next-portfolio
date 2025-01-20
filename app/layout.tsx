@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("http://localhost:3000"),
   title: {
     template: "%s | ポートフォリオサイト",
-    default: "シンプルなコーポレートサイト",
+    default: "ポートフォリオサイト",
   },
   description: "「Next.js+ヘッドレスCMSではじめる！かんたん・モダンWebサイト制作入門」で作成されるサイトです。",
   openGraph: {
