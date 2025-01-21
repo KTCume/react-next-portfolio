@@ -29,79 +29,39 @@
     animation: fadeIn 1s ease-in-out;
 }
 
-/* プロフィールリスト全体 */
-.profileList {
-    list-style: none;
-    padding: 20px;
-    margin: 0;
-    width: 100%;
-    max-width: 750px;
-    background: linear-gradient(145deg, #f5f7fa, #ffffff);
-    border-radius: 30px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1), inset 0 1px 6px rgba(255, 255, 255, 0.8);
+/* プロフィールカード */
+.profileCard {
     display: flex;
     flex-direction: column;
-    gap: 0; /* 隙間をなくす */
-    overflow: hidden; /* アイテムがはみ出さないように */
-    position: relative;
-    border: 1px solid rgba(0, 0, 0, 0.05);
+    gap: 20px; /* 各カード間の隙間 */
+    width: 100%;
+    max-width: 750px;
 }
 
 /* プロフィールアイテム */
 .profileItem {
+    display: flex;
+    justify-content: space-between;
     font-size: 1.4rem;
     font-weight: 600;
-    padding: 28px 40px;
-    color: #374151; /* 視認性の良い落ち着いた色 */
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    position: relative;
-    border-radius: 0; /* 一体感を出すために角をなくす */
+    padding: 20px;
+    color: #374151;
     background: linear-gradient(145deg, #ffffff, #f1f5f9);
-    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.05); /* アイテムごとの区切り線 */
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.05);
     transition: background 0.3s ease;
-    font-family: 'Roboto', sans-serif; /* 落ち着いたフォント */
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
 }
 
-/* アイテムの背景を交互に変化 */
-.profileItem:nth-child(odd) {
-    background: linear-gradient(145deg, #f3f6fa, #ffffff);
+/* アイテムのラベル部分 */
+.profileLabel {
+    font-weight: 700;
+    color: #1e40af;
 }
 
-/* アイコンのスタイル */
-.profileItem::before {
-    content: '';
-    display: block;
-    width: 28px;
-    height: 28px;
-    border-radius: 50%;
-    background: linear-gradient(145deg, #1d4ed8, #3b82f6);
-    flex-shrink: 0;
-    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
-}
-
-/* 背景装飾：全体の境界装飾 */
-.profileList::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    border: 2px dashed rgba(30, 64, 175, 0.1);
-    border-radius: 30px;
-    pointer-events: none;
-}
-
-/* 全体のグラデーションライン */
-.profileList::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 4px;
-    width: 100%;
-    background: linear-gradient(to right, #3b82f6, #60a5fa, #1d4ed8);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    border-radius: 4px 4px 0 0;
+/* アイテムの値部分 */
+.profileValue {
+    color: #374151;
 }
 
 /* アニメーション */

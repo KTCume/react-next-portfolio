@@ -1,21 +1,33 @@
 import styles from "./page.module.css";
 
-
 export default function Page() {
     return (
         <div>
             <section className={styles.top}>
                 <h1 className={styles.title}>プロフィール</h1>
-                <ul className={styles.profileList}>
-                    <li className={styles.profileItem}>名前: 梅井 太貴</li>
-                    <li className={styles.profileItem}>年齢: 19歳</li>
-                    <li className={styles.profileItem}>専攻: スーパーITエンジニア専攻</li>
-                    <li className={styles.profileItem}>趣味: アニメ、マンガ、KPOP</li>
-                    <li className={styles.profileItem}>好きな食べ物: ラーメン、ハンバーガー</li>
-                </ul>
+                <div className={styles.profileCard}>
+                    <div className={styles.profileItem}>
+                        <span className={styles.profileLabel}>名前:</span>
+                        <span className={styles.profileValue}>梅井 太貴</span>
+                    </div>
+                    <div className={styles.profileItem}>
+                        <span className={styles.profileLabel}>年齢:</span>
+                        <span className={styles.profileValue}>19歳</span>
+                    </div>
+                    <div className={styles.profileItem}>
+                        <span className={styles.profileLabel}>専攻:</span>
+                        <span className={styles.profileValue}>スーパーITエンジニア専攻</span>
+                    </div>
+                    <div className={styles.profileItem}>
+                        <span className={styles.profileLabel}>趣味:</span>
+                        <span className={styles.profileValue}>アニメ、マンガ、KPOP</span>
+                    </div>
+                    <div className={styles.profileItem}>
+                        <span className={styles.profileLabel}>好きな食べ物:</span>
+                        <span className={styles.profileValue}>ラーメン、ハンバーガー</span>
+                    </div>
+                </div>
             </section>
-
-            
         </div>
     );
 }
