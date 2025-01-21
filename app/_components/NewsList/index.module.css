@@ -60,7 +60,9 @@
     }
     
     .image {
-        width: 100%;
+        width: auto; /* 自動調整にする */
+        max-width: 100%; /* 最大幅を100%に制限 */
+        height: auto; /* 高さを自動調整 */
         border-radius: 8px;
         margin-bottom: 12px; /* マージンを少し増やす */
     }
