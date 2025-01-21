@@ -1,69 +1,77 @@
-/* page.module.css */
-
 .container {
-    text-align: center;
-  }
-  
+  text-align: center;
+}
+
+.memberList {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 初期状態は3列 */
+  gap: 40px;
+  margin-top: 40px;
+}
+
+@media (max-width: 1024px) {
   .memberList {
-    list-style: none;
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* レスポンシブなグリッド表示 */
-    gap: 40px;
-    margin-top: 40px;
+    grid-template-columns: repeat(2, 1fr); /* 1024px以下は2列 */
   }
-  
-  .listItem {
-    background-color: #fff;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+}
+
+@media (max-width: 600px) {
+  .memberList {
+    grid-template-columns: 1fr; /* 600px以下は1列 */
   }
-  
-  .imageWrapper {
-    width: 240px;
-    height: 240px;
-    margin-bottom: 20px;
-    border-radius: 50%;
-    overflow: hidden; /* 画像が丸く収まるように */
-  }
-  
-  .image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* 画像が正方形に収まるように */
-  }
-  
-  .info {
-    padding: 10px;
-  }
-  
-  .name {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-bottom: 8px;
-  }
-  
-  .position {
-    margin-bottom: 8px;
-    font-size: 1rem;
-  }
-  
-  .profile {
-    font-size: 0.9rem;
-    color: #555;
-  }
-  
-  .empty {
-    margin-top: 40px;
-    font-size: 1.5rem;
-    color: #777;
-  }
-  
-  
+}
+
+.listItem {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageWrapper {
+  width: 240px;
+  height: 240px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  overflow: hidden; /* 画像が丸く収まるように */
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 画像が正方形に収まるように */
+}
+
+.info {
+  padding: 10px;
+}
+
+.name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.position {
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+.profile {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.empty {
+  margin-top: 40px;
+  font-size: 1.5rem;
+  color: #777;
+}
