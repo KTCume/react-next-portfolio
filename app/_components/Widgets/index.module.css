@@ -1,20 +1,26 @@
-/* ウィジェットアイテムのスタイル */
 .widgetItem {
-  width: 100%; /* 親要素の幅に合わせる */
+  width: 100%;
   height: 320px;
-  background-color: #ffffff; /* 明るい背景 */
-  border-radius: 16px; /* 角を丸く */
+  background-color: #ffffff;
+  border-radius: 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); /* ソフトな影で浮き上がるように */
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   padding: 20px;
   font-size: 16px;
-  color: #333333; /* 濃い灰色 */
+  color: #333333;
   text-align: center;
-  overflow: hidden; /* アイテムの中身がはみ出さないように */
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* スムーズなアニメーション */
 }
+
+.widgetItem:hover {
+  transform: translateY(-10px); /* 少し浮かび上がる */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); /* ホバー時の影を強調 */
+}
+
 
 .imageWrapper {
   width: 100%;
