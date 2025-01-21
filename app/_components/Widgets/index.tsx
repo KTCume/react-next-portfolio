@@ -36,6 +36,16 @@ const WidgetList: React.FC = () => {
       content: "株価: A社の株価は5%上昇しました。",
       link: "/stocks", // 株価情報リンク
     },
+    {
+      imageSrc: "webkiso.jpg", // 画像URL
+      content: "株価: A社の株価は5%上昇しました。",
+      link: "/stocks", // 株価情報リンク
+    },
+    {
+      imageSrc: "webkiso.jpg", // 画像URL
+      content: "株価: A社の株価は5%上昇しました。",
+      link: "/stocks", // 株価情報リンク
+    },
   ];
 
   return (
