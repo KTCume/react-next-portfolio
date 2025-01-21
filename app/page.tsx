@@ -4,6 +4,7 @@ import { getNewsList } from "@/app/_libs/microcms";
 import { TOP_NEWS_LIMIT } from "@/app/_constants";
 import NewsList from "@/app/_components/NewsList";
 import ButtonLink from "@/app/_components/ButtonLink";
+import Widgets from "./_components/Widgets";
 
 export default async function Home() {
   const data = await getNewsList({
@@ -44,6 +45,9 @@ export default async function Home() {
         <div className={styles.profileLink}>
           <ButtonLink href="/about-me">プロフィールを見る</ButtonLink>
         </div>
+      </section>
+      <section className={styles.widgetsSection}>
+                <Widgets />
       </section>
     </>
   ); 

@@ -1,5 +1,5 @@
 import styles from "./page.module.css";
-import Widgets from "../_components/Widgets";
+
 
 export default function Page() {
     return (
@@ -15,9 +15,7 @@ export default function Page() {
                 </ul>
             </section>
 
-            <section className={styles.widgetsSection}>
-                <Widgets />
-            </section>
+            
         </div>
     );
 }
