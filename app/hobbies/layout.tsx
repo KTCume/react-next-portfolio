@@ -1,5 +1,5 @@
 import Sheet from "@/app/_components/Sheet";
-import Hero from "@/app/_components/Hero";
+import Hero from "@/app/_components/HeroSkill";
 
 export const metadata = {
     title: "スキル",
