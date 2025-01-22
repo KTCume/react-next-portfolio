@@ -1,7 +1,4 @@
-.container {
-  text-align: center;
-}
-
+/* 追加部分 */
 .memberList {
   list-style: none;
   padding: 0;
@@ -23,7 +20,7 @@
   }
 }
 
-.listItem {
+.listItemContent {
   background-color: #ffffff;
   border-radius: 16px;
   display: flex;
@@ -35,7 +32,9 @@
   font-size: 16px;
   color: #333333;
   text-align: center;
-  overflow: hidden;}
+  overflow: hidden;
+  cursor: pointer;
+}
 
 .imageWrapper {
   width: 100%;
@@ -52,7 +51,6 @@
   object-fit: cover; /* 画像が枠内にきれいに収まる */
   border-radius: 14px; /* 角に丸みを追加（8pxの場合） */
 }
-
 
 .info {
   padding: 10px;
@@ -79,3 +77,13 @@
   font-size: 1.5rem;
   color: #777;
 }
+
+/* 追加部分 */
+.memberList a {
+  text-decoration: none; /* Linkコンポーネントのデフォルトの装飾を削除 */
+}
+
+.listItemContent:hover {
+  background-color: #f0f0f0; /* ホバー時に少し明るくなる */
+}
+
