@@ -15,7 +15,7 @@ export default function Hero({ title, sub }: Props) {
             </div>
             <Image
             className={styles.bgimg}
-            src="/blog.jpg"
+            src="/webkiso.jpg"
             alt=""
             width={4000}
             height={1200}
