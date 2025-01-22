@@ -1,6 +1,6 @@
 .header {
     position: absolute;
-    padding: 16px 24px 10px;
+    padding: 16px 24px 8px;
     z-index: 1000;
     display: flex;
     align-items: center;
