@@ -13,7 +13,7 @@ export default function Footer() {
                         <Link href="/news">ブログ</Link>
                     </li>
                     <li className="styles.item">
-                        <Link href="/skill">趣味</Link>
+                        <Link href="/skill">スキル</Link>
                     </li>
                     <li className="styles.item">
                         <Link href="/contact">お問い合わせ</Link>

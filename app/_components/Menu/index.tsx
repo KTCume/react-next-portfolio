@@ -61,7 +61,7 @@ export default function Menu() {
             <Link href="/news" onClick={handleLinkClick}>ブログ</Link>
           </li>
           <li>
-            <Link href="/skill" onClick={handleLinkClick}>趣味</Link>
+            <Link href="/skill" onClick={handleLinkClick}>スキル</Link>
           </li>
           <li>
             <Link href="/contact" onClick={handleLinkClick}>お問い合わせ</Link>

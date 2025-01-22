@@ -22,7 +22,7 @@ export default function Page() {
                     <div className={styles.divider}></div>
 
                     <div className={styles.profileItem}>
-                        <span className={styles.profileLabel}>趣味:</span> アニメ、マンガ、KPOP
+                        <span className={styles.profileLabel}>スキル:</span> アニメ、マンガ、KPOP
                     </div>
                     <div className={styles.divider}></div>
 
