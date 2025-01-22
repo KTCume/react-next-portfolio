@@ -40,8 +40,14 @@
 }
 
 .text {
-  font-size: 14px;
+  font-size: 20px;
   color: #555555; /* テキストの色をやや明るく */
+  line-height: 1.5;
+  margin-top: 10px;
+}
+
+.inside {
+  font-size: 14px;
   line-height: 1.5;
   margin-top: 10px;
 }
