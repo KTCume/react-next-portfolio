@@ -31,6 +31,35 @@ export default function Page() {
                     </div>
                 </div>
             </section>
+
+            {/* 学習中のスキル セクション */}
+            <section className={styles.skillsSection}>
+                <h2 className={styles.skillsTitle}>学習中のスキル</h2>
+                <div className={styles.skillsContainer}>
+                    <div className={styles.skillItem}>
+                        <span className={styles.skillLabel}>HTML, CSS, JavaScript:</span> 
+                        <p>これらの基本的なウェブ技術を勉強しており、ウェブデザインやフロントエンド開発に関する知識を深めています。</p>
+                    </div>
+                    <div className={styles.divider}></div>
+
+                    <div className={styles.skillItem}>
+                        <span className={styles.skillLabel}>Git:</span> 
+                        <p>バージョン管理ツールのGitを使って、コードの管理やチーム開発の経験を積んでいます。</p>
+                    </div>
+                    <div className={styles.divider}></div>
+
+                    <div className={styles.skillItem}>
+                        <span className={styles.skillLabel}>TypeScript:</span> 
+                        <p>現在TypeScriptを勉強中です。JavaScriptの拡張機能を使い、型安全なコードを書くことを目指しています。</p>
+                    </div>
+                    <div className={styles.divider}></div>
+
+                    <div className={styles.skillItem}>
+                        <span className={styles.skillLabel}>React:</span> 
+                        <p>Reactを使ったウェブアプリケーション開発にも挑戦したいと考えています。コンポーネントベースの開発を学んでいます。</p>
+                    </div>
+                </div>
+            </section>
         </div>
     );
 }
