@@ -17,34 +17,19 @@ const WidgetItem: React.FC<{ imageSrc: string; content: string; link: string }> 
 const WidgetList: React.FC = () => {
   const items = [
     {
-      imageSrc: "webkiso.jpg", // 画像URL
-      content: "天気情報: 今日の天気は晴れ、最高気温は25℃です。",
-      link: "/skill", // 天気情報リンク
+      imageSrc: "blog.jpg", // 画像URL
+      content: "ブログ: 取り組みについて日々追加していきます。",
+      link: "/news", // ニュースリンク
     },
     {
-      imageSrc: "webkiso.jpg", // 画像URL
-      content: "ニュース: 世界の最新ニュースをチェック。",
-      link: "/news", // ニュースリンク
+      imageSrc: "pasokon.jpg", // 画像URL
+      content: "スキル一覧: 学習中のスキルを掲載しています。",
+      link: "/skill", // 天気情報リンク
     },
     {
       imageSrc: "webkiso.jpg", // 画像URL
       content: "カレンダー: 今日の予定を確認しましょう。",
       link: "/calendar", // カレンダーリンク
-    },
-    {
-      imageSrc: "webkiso.jpg", // 画像URL
-      content: "株価: A社の株価は5%上昇しました。",
-      link: "/stocks", // 株価情報リンク
-    },
-    {
-      imageSrc: "webkiso.jpg", // 画像URL
-      content: "株価: A社の株価は5%上昇しました。",
-      link: "/stocks", // 株価情報リンク
-    },
-    {
-      imageSrc: "webkiso.jpg", // 画像URL
-      content: "株価: A社の株価は5%上昇しました。",
-      link: "/stocks", // 株価情報リンク
     },
   ];
 
