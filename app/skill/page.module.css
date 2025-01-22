@@ -3,20 +3,14 @@
   list-style: none;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 初期状態は3列 */
+  grid-template-columns: repeat(2, 1fr); /* 初期状態は3列 */
   gap: 40px;
   margin-top: 40px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 800px) {
   .memberList {
-    grid-template-columns: repeat(2, 1fr); /* 1024px以下は2列 */
-  }
-}
-
-@media (max-width: 600px) {
-  .memberList {
-    grid-template-columns: 1fr; /* 600px以下は1列 */
+    grid-template-columns: 1fr; /* 1024px以下は2列 */
   }
 }
 
