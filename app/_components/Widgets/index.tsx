@@ -19,7 +19,7 @@ const WidgetList: React.FC = () => {
     {
       imageSrc: "webkiso.jpg", // 画像URL
       content: "天気情報: 今日の天気は晴れ、最高気温は25℃です。",
-      link: "/hobbies", // 天気情報リンク
+      link: "/skill", // 天気情報リンク
     },
     {
       imageSrc: "webkiso.jpg", // 画像URL
