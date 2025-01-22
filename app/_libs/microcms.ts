@@ -40,7 +40,7 @@ const client = createClient({
 export const getMembersList = async (queries?: MicroCMSQueries) => {
     const listData = await client
     .getList<Member>({
-        endpoint: "hobbies",
+        endpoint: "skill",
         queries,
     });
     return listData;
