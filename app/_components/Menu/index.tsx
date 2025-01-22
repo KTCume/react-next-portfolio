@@ -55,7 +55,7 @@ export default function Menu() {
         )}
         <ul className={styles.items}>
           <li>
-            <Link href="/about-me" onClick={handleLinkClick}>自己紹介</Link>
+            <Link href="/about" onClick={handleLinkClick}>自己紹介</Link>
           </li>
           <li>
             <Link href="/news" onClick={handleLinkClick}>ブログ</Link>
