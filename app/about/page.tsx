@@ -4,7 +4,7 @@ export default function Page() {
     return (
         <div>
             <section className={styles.top}>
-                <h1 className={styles.title}>プロフィール</h1>
+                <h1 className={styles.title}>PROFILE</h1>
                 <div className={styles.profileContainer}>
                     <div className={styles.profileItem}>
                         <span className={styles.profileLabel}>名前:</span> 梅井 太貴

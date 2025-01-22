@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+
 /* 全体のコンテナ */
 .top {
     display: flex;
@@ -9,24 +12,21 @@
     margin: 50px auto;
     width: 90%;
     max-width: 850px;
-    background: linear-gradient(145deg, #e8f0fe, #ffffff);
-    border-radius: 40px;
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15), inset 0 2px 8px rgba(255, 255, 255, 0.8);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 /* タイトル */
 .title {
     font-size: 3.5rem;
-    font-weight: 900;
+    font-weight: 700;
     margin-bottom: 40px;
     color: #1e40af;
     text-shadow: 0px 5px 10px rgba(30, 64, 175, 0.2);
     letter-spacing: 1.5px;
-    line-height: 1.1;
-    font-family: 'Poppins', sans-serif;
+    line-height: 1.2;
+    font-family: 'Playfair Display', serif;
     animation: fadeIn 1s ease-in-out;
+    transform: skewX(-10deg); /* 文字を右に少し傾ける */
 }
 
 /* プロフィールのコンテナ */
