@@ -47,7 +47,10 @@
 }
 
 .newsTitle {
-  font-size: 2.5rem; /* 文字サイズを大きくして見やすく */
+  font-size: 2.8rem; /* 文字サイズを大きくして見やすく */
+  font-family: 'Playfair Display', serif;
+  transform: skewX(-10deg); /* 文字を右に少し傾ける */
+
   font-weight: bold; /* 太字にして視認性を向上 */
   text-align: center; /* 文字を中央揃えに */
   margin-bottom: 16px; /* 下部に適度な余白を追加 */
@@ -75,7 +78,7 @@
 .profileTitle {
   font-family: 'Playfair Display', serif;
   transform: skewX(-10deg); /* 文字を右に少し傾ける */
-  font-size: 1.8rem;
+  font-size: 3.8rem;
   font-weight: bold;
   margin-bottom: 16px;
   color: #333;
