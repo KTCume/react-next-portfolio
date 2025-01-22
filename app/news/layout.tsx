@@ -1,4 +1,4 @@
-import Hero from "@/app/_components/Hero";
+import Hero from "@/app/_components/HeroBlog";
 import Sheet from "@/app/_components/Sheet";
 
 export const metadata = {
