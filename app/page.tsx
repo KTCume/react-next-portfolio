@@ -38,7 +38,7 @@ export default async function Home() {
       </div>
     </section>
     <section className={styles.profile}>
-        <h2 className={styles.profileTitle}>プロフィール</h2>
+        <h2 className={styles.profileTitle}>PROFILE</h2>
         <p className={styles.profileDescription}>
           私は梅井太貴です。ITエンジニアとして、さまざまなプロジェクトに取り組んでいます。このサイトでは、私の作品やブログをご覧いただけます。
         </p>
