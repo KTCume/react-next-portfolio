@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+
 /* メニューのロゴ部分 */
 .logoContainer {
   display: flex;
@@ -27,6 +30,8 @@
 .items li a {
   text-decoration: none;
   color: inherit;
+  font-family: 'Playfair Display', serif; /* 読みやすいエレガントなフォント */
+  font-weight: bold;
   font-size: 18px;
   transition: color 0.3s ease, transform 0.3s ease;
 }
