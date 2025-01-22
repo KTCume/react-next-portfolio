@@ -85,6 +85,12 @@
     text-align: center;
   }
 
+  .items li:hover::after {
+    width: 30%; /* ホバー時に下線を短くする */
+    left: 35%; /* 中央に配置 */
+  }
+  
+
   /* ロゴ部分の表示/非表示を制御 */
   .logoContainer {
     display: none; /* デフォルトで非表示 */
