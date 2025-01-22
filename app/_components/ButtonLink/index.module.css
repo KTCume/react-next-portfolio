@@ -1,19 +1,26 @@
 .button {
     display: block;
-    padding: 20px 40px;
-    border-radius: 14px;
+    padding: 16px 32px; /* 少し小さめに調整 */
+    border-radius: 20px; /* 角を丸く */
     width: 300px;
-    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    background: linear-gradient(135deg, #4A90E2, #FF8C94, #AEDF5A, #68B8A4, #F57299); /* 少し濃いめのカラーに変更 */
     color: var(--color-text-unpainted);
+    text-align: center;
+    font-weight: 600; /* 少し軽いフォントに */
+    transition: background 0.3s ease, transform 0.2s ease;
+    background-size: 400% 400%; /* グラデーションを広げる */
+    animation: gradientBackground 5s ease infinite; /* グラデーションをアニメーションさせる */
 }
+
+
 
 .button:hover {
-    opacity: 0.9;
+    opacity: 0.8;
 }
 
-@media  (max-width: 640px) {
+@media (max-width: 640px) {
     .button {
-        padding: 16px 24px;
+        padding: 14px 28px; /* スマホ用に少しだけ縮小 */
         width: 100%;
     }
 }
