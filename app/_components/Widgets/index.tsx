@@ -46,7 +46,7 @@ const WidgetList: React.FC = () => {
 export default function Widgets() {
   return (
     <section className={styles.top}>
-      <h1 className={styles.title}>ウィジェットのリスト</h1>
+      <h1 className={styles.title}>コンテンツ一覧</h1>
       <WidgetList />
     </section>
   );
