@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+.title {
+    font-family: 'Playfair Display', serif; /* 読みやすいエレガントなフォント */
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    mask-border: 1rem;
+}
+
 .container {
     position: relative;
     display: flex;
@@ -9,12 +19,7 @@
     padding: 100px 0;
 }
 
-.title {
-    font-size: 3rem;
-    font-weight: bold;
-    text-align: center;
-    mask-border: 1rem;
-}
+
 
 .sub {
     display: flex;
