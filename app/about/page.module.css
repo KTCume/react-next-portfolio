@@ -18,14 +18,15 @@
 .title {
     font-size: 3.5rem;
     font-weight: 700;
+    margin-top: -100px;
     margin-bottom: 40px;
     color: #1e40af;
     text-shadow: 0px 5px 10px rgba(30, 64, 175, 0.2);
     letter-spacing: 1.5px;
     line-height: 1.2;
     font-family: 'Playfair Display', serif;
-    animation: fadeIn 1s ease-in-out;
     transform: skewX(-10deg); /* 文字を右に少し傾ける */
+    animation: fadeIn 1s ease-in-out;
 }
 
 /* プロフィールのコンテナ */
