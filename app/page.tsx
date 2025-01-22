@@ -15,7 +15,7 @@ export default async function Home() {
     <>
     <section className={styles.top}>
     <div>
-      <h1 className={styles.title}>梅井太貴</h1>
+      <h1 className={styles.title}>PORTFOLIO</h1>
       <p className={styles.description}>
         ポートフォリオサイトです。
       </p>

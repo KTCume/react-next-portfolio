@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
 .top {
   position: relative;
   display: flex;
@@ -10,8 +12,9 @@
 }
 
 .title {
-  font-size: 3rem;
+  font-size: 4.5rem;
   font-weight: bold;
+  font-family: 'Playfair Display', serif;
   text-align: center;
   margin-bottom: 1rem;
 }
