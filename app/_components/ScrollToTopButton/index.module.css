@@ -4,7 +4,7 @@
   right: 20px;
   width: 60px;
   height: 60px;
-  background-color: #3498db; /* ボタンの背景色 */
+  background: linear-gradient(135deg, #B39DDB, #C5A7E4, #D1A7F3); /* 薄めの紫グラデーション */
   color: #fff; /* ボタン内のテキスト色 */
   border: none;
   border-radius: 50%; /* 丸い形 */
@@ -13,7 +13,7 @@
   justify-content: center;
   font-size: 24px;
   cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
   transition: opacity 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
   opacity: 0; /* 初期状態で非表示 */
   transform: translateY(100px); /* 初期状態で画面外に配置 */
@@ -26,11 +26,11 @@
 }
 
 .scrollToTopButton:hover {
-  background-color: #2980b9; /* ホバー時に色を少し暗く */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg, #C5A7E4, #B39DDB, #D1A7F3); /* ホバー時の紫グラデーション */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .scrollToTopButton:focus {
   outline: none; /* フォーカス時のアウトラインを非表示 */
-  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.5); /* フォーカス時のハイライト */
+  box-shadow: 0 0 0 3px rgba(148, 0, 211, 0.3); /* フォーカス時のハイライト */
 }
