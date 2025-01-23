@@ -1,3 +1,4 @@
+import Image from "next/image";
 import styles from "./page.module.css";
 
 export default function Page() {
@@ -6,58 +7,34 @@ export default function Page() {
             <section className={styles.top}>
                 <h1 className={styles.title}>PROFILE</h1>
                 <div className={styles.profileContainer}>
-                    <div className={styles.profileItem}>
-                        <span className={styles.profileLabel}>名前:</span> 梅井 太貴
-                    </div>
-                    <div className={styles.divider}></div>
+                    <Image
+                        className={styles.profileImage}
+                        src="/profile.jpg"
+                        alt=""
+                        width={300}
+                        height={300}
+                    />
+                    <div className={styles.profileTextContainer}>
+                    <h2 className={styles.name}></h2>
+                    <p className={styles.profileText}>
+                        私の名前は梅井 太貴です。<br />
+                        現在、京都デザイン＆テクノロジー専門学校のスーパーITエンジニア専攻でITを学んでいます。<br />
 
-                    <div className={styles.profileItem}>
-                        <span className={styles.profileLabel}>年齢:</span> 19歳
-                    </div>
-                    <div className={styles.divider}></div>
-
-                    <div className={styles.profileItem}>
-                        <span className={styles.profileLabel}>専攻:</span> スーパーITエンジニア専攻
-                    </div>
-                    <div className={styles.divider}></div>
-
-                    <div className={styles.profileItem}>
-                        <span className={styles.profileLabel}>スキル:</span> アニメ、マンガ、KPOP
-                    </div>
-                    <div className={styles.divider}></div>
-
-                    <div className={styles.profileItem}>
-                        <span className={styles.profileLabel}>好きな食べ物:</span> ラーメン、ハンバーガー
+                        私の趣味は、アニメ、マンガそしてK-POPです。<br />
+                        また、好きな食べ物はラーメンとハンバーガーです。<br />
+                    </p>
                     </div>
                 </div>
             </section>
 
             {/* 学習中のスキル セクション */}
-            <section className={styles.skillsSection}>
+            <section className={styles.skillstop}>
                 <h2 className={styles.skillsTitle}>学習中のスキル</h2>
                 <div className={styles.skillsContainer}>
-                    <div className={styles.skillItem}>
-                        <span className={styles.skillLabel}>HTML, CSS, JavaScript:</span> 
-                        <p>これらの基本的なウェブ技術を勉強しており、ウェブデザインやフロントエンド開発に関する知識を深めています。</p>
-                    </div>
-                    <div className={styles.divider}></div>
-
-                    <div className={styles.skillItem}>
-                        <span className={styles.skillLabel}>Git:</span> 
-                        <p>バージョン管理ツールのGitを使って、コードの管理やチーム開発の経験を積んでいます。</p>
-                    </div>
-                    <div className={styles.divider}></div>
-
-                    <div className={styles.skillItem}>
-                        <span className={styles.skillLabel}>TypeScript:</span> 
-                        <p>現在TypeScriptを勉強中です。JavaScriptの拡張機能を使い、型安全なコードを書くことを目指しています。</p>
-                    </div>
-                    <div className={styles.divider}></div>
-
-                    <div className={styles.skillItem}>
-                        <span className={styles.skillLabel}>React:</span> 
-                        <p>Reactを使ったウェブアプリケーション開発にも挑戦したいと考えています。コンポーネントベースの開発を学んでいます。</p>
-                    </div>
+                    <p className={styles.skillsText}>
+                        現在、HTML、CSS、JavaScript、Git、TypeScript、Reactなどのスキルを学んでおり、ウェブ開発の基礎から応用まで幅広く勉強しています。<br />
+                        特に、型安全なコードを書くためにTypeScriptに注力しており、Reactを使ったウェブアプリケーション開発にも挑戦しています。<br />
+                    </p>
                 </div>
             </section>
         </div>
