@@ -26,7 +26,7 @@
 /* 新規追加: 画像を親要素でラップし、高さやアスペクト比を制御 */
 .imageContainer {
     width: 100%;
-    aspect-ratio: 16 / 9; /* 縦横比を固定 */
+    aspect-ratio: 16 / 10; /* 縦横比を変更して画像を少し縦長に */
     overflow: hidden; /* はみ出した部分を隠す */
     border-radius: 10px 10px 0 0;
 }
@@ -36,6 +36,7 @@
     height: 100%;
     object-fit: cover; /* 画像を切り取って親要素にフィット */
 }
+
 
 .content {
     padding: 20px;
@@ -49,7 +50,7 @@
 }
 
 .title {
-    font-size: 18px;
+    font-size: 25px;
     font-weight: bold;
     color: #333;
     text-transform: capitalize;
@@ -74,13 +75,13 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     .container {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 700px) {
     .container {
         grid-template-columns: 1fr;
     }
