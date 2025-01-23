@@ -61,7 +61,7 @@ export default function Menu() {
             <Link href="/news" onClick={handleLinkClick}>Blog</Link>
           </li>
           <li>
-            <Link href="/skill" onClick={handleLinkClick}>Skill</Link>
+            <Link href="/skills" onClick={handleLinkClick}>Skill</Link>
           </li>
           <li>
             <Link href="/contact" onClick={handleLinkClick}>Contact</Link>

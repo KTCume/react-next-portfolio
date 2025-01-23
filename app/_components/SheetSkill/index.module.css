@@ -1,0 +1,8 @@
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px;
+    box-sizing: border-box; /* パディングを含めた幅を調整 */
+}

@@ -5,7 +5,7 @@ import type {
     MicroCMSListContent,
 } from "microcms-js-sdk";
 
-export type Member = {
+export type Skills = {
     name: string;
     position: string;
     profile: string;
@@ -37,10 +37,10 @@ const client = createClient({
     apiKey: process.env.MICROCMS_API_KEY,
 });
 
-export const getMembersList = async (queries?: MicroCMSQueries) => {
+export const getSkillsList = async (queries?: MicroCMSQueries) => {
     const listData = await client
-    .getList<Member>({
-        endpoint: "skill",
+    .getList<Skills>({
+        endpoint: "skills",
         queries,
     });
     return listData;
@@ -53,6 +53,18 @@ export const getNewsList = async (queries?: MicroCMSQueries) => {
         queries,
     });
     return listData;
+};
+
+export const getSkillsDetail = async (
+    contentId: string,
+    queries?: MicroCMSQueries
+) => {
+    const detailData = await client.getListDetail<Skills>({
+        endpoint: "skills",
+        contentId,
+        queries,
+    });
+    return detailData;
 };
 
 export const getNewsDetail = async (
@@ -82,6 +94,13 @@ export const getCategoryDetail = async (
         },
     });
     return detailData;
+};
+
+export const getAllSkillsList = async () => {
+    const listData = await client.getAllContents<Skills>({
+        endpoint: "skills",
+    });
+    return listData;
 };
 
 export const getAllNewsList = async () => {

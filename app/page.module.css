@@ -127,8 +127,53 @@
 }
 
 
+.skills {
+  position: relative;
+  background-color: #fff;
+  width: 840px;
+  margin: -40px auto 0;
+  padding: 24px 40px;
+  border-radius: var(--border-radius);
+}
+
+.skillsTitle {
+  font-size: 2.8rem; /* 文字サイズを大きくして見やすく */
+  font-family: 'Playfair Display', serif;
+  transform: skewX(-10deg); /* 文字を右に少し傾ける */
+  font-weight: bold; /* 太字にして視認性を向上 */
+  text-align: center; /* 文字を中央揃えに */
+  margin-bottom: 16px; /* 下部に適度な余白を追加 */
+  position: relative; /* 疑似要素の基準を設定 */
+}
+
+.skillsTitle::after {
+  content: ""; /* 空の内容を設定 */
+  display: block; /* ブロック要素として扱う */
+  width: 70%; /* 下線の幅を調整 */
+  height: 6px; /* 下線の太さを調整 */
+  background: linear-gradient(135deg, #ff7eb3, #ff758c, #ffc3a0); /* グラデーションに角度と多色を追加 */
+  margin: 0 auto; /* 中央揃え */
+  position: absolute; /* 位置を調整 */
+  bottom: -10px; /* 下線を文字の下に配置 */
+  left: 50%; /* 横方向で中央揃え */
+  transform: translateX(-50%) skewX(-15deg); /* 斜めの動きを加える */
+  border-radius: 10px; /* 丸みを加えたデザイン */
+  box-shadow: 0 4px 10px rgba(255, 120, 140, 0.5); /* 下線に影を付けて浮いているような効果 */
+  opacity: 0.9; /* 若干の透明度を追加 */
+}
+
+.skillsLink {
+  position: absolute;
+  right: -40px;
+  bottom: -40px;
+}
+
+
 @media (max-width: 1000px) {
   .news {
+    width: calc(100% - 160px);
+  }
+  .skills {
     width: calc(100% - 160px);
   }
 }
@@ -180,5 +225,17 @@
 
   .profileDescription {
     font-size: 0.9rem;
+  }
+
+  .skills {
+    width: calc(100% - 32px);
+    padding: 16px 24px;          
+  }
+
+  .skillsLink {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    margin-top: 16px;
   }
 }
