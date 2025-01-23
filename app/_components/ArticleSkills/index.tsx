@@ -9,6 +9,7 @@ type Props = {
 export default function Article({ data }: Props) {
     return (
         <main>
+            <div className={styles.container}>
             <h1 className={styles.title}>{data.name}</h1>
             <p className={styles.description}>{data.position}</p>
             {data.image && (
@@ -26,6 +27,7 @@ export default function Article({ data }: Props) {
                 __html: data.profile,
             }}
             />
+            </div>
         </main>
     );
 }
