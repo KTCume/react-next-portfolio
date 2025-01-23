@@ -16,23 +16,25 @@ export default function SkillsList({ skills }: Props) {
             {skills.map((article) => (
                 <li key={article.id} className={styles.list}>
                     <Link href={`/skills/${article.id}`} className={styles.link}>
-                        {article.image ? (
-                            <Image
-                                src={article.image.url}
-                                alt=""
-                                className={styles.image}
-                                width={article.image.width}
-                                height={article.image.height}
-                            />
-                        ) : (
-                            <Image
-                                className={styles.image}
-                                src="/no-image.png"
-                                alt="No Image"
-                                width={1200}
-                                height={630}
-                            />
-                        )}
+                        <div className={styles.imageContainer}>
+                            {article.image ? (
+                                <Image
+                                    src={article.image.url}
+                                    alt={article.name || "Skill Image"}
+                                    className={styles.image}
+                                    width={1200}
+                                    height={630} // 固定サイズでアスペクト比を維持
+                                />
+                            ) : (
+                                <Image
+                                    className={styles.image}
+                                    src="/no-image.png"
+                                    alt="No Image"
+                                    width={1200}
+                                    height={630}
+                                />
+                            )}
+                        </div>
                         <dl className={styles.content}>
                             <dt className={styles.title}>{article.name}</dt>
                         </dl>

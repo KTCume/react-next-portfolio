@@ -10,61 +10,60 @@
     align-items: center;
     gap: 24px;
     padding: 16px;
-    background-color: #ffffff; /* 背景色を白に変更 */
-    border-left: 4px solid #4a90e2; /* 左側のアクセントライン */
+    background-color: #ffffff;
+    border-left: 4px solid #4a90e2;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* 軽めのシャドウ */
-    transition: background-color 0.2s ease, transform 0.2s ease; /* トランジションを追加 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
 .link:hover {
-    background-color: #f8f8f8; /* ホバー時に軽く色が変わる */
-    transform: translateY(-2px); /* 軽く浮き上がるエフェクト */
+    background-color: #f8f8f8;
+    transform: translateY(-2px);
 }
 
 .image {
-    width: 150px;
-    height: auto;
+    flex-shrink: 0; /* ボックスサイズに影響されないように設定 */
+    width: 150px; /* デスクトップ時の標準サイズ */
+    height: 100px; /* デスクトップ時の標準サイズ */
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 軽いシャドウ */
-    object-fit: cover; /* 画像が枠にぴったり収まる */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    object-fit: cover; /* 画像の比率を維持しつつ枠内に収める */
 }
 
+/* タイトル */
 .title {
-    font-size: 1.3rem; /* タイトルを少し大きく */
+    font-size: 1.3rem;
     font-weight: 600;
-    margin-bottom: 8px; /* マージンを少し増やす */
-    color: #333; /* ダークグレー */
+    margin-bottom: 8px;
+    color: #333;
     transition: color 0.2s ease;
-}
-
-.title:hover {
-    color: #4a90e2; /* アクセントブルー */
 }
 
 .meta {
     display: flex;
     align-items: center;
     gap: 12px;
-    font-size: 0.9rem; /* メタ情報を少し大きく */
-    color: #777; /* グレーを少し明るく */
+    font-size: 0.9rem;
+    color: #777;
 }
 
 /* モバイル対応スタイル */
 @media (max-width: 640px) {
     .link {
-        display: block;
+        display: block; /* 縦配置に変更 */
         padding: 14px;
-        border-left: 4px solid #4a90e2; /* モバイルでも左線を維持 */
+        border-left: 4px solid #4a90e2;
         border-radius: 8px;
     }
-    
+
     .image {
-        width: auto; /* 自動調整にする */
-        max-width: 100%; /* 最大幅を100%に制限 */
+        width: 100%; /* 幅をボックスサイズに合わせる */
         height: auto; /* 高さを自動調整 */
+        max-width: 100%; /* 最大幅を100%に制限 */
+        aspect-ratio: 3 / 2; /* 縦横比を3:2に固定 */
         border-radius: 8px;
-        margin-bottom: 12px; /* マージンを少し増やす */
+        margin-bottom: 12px; /* 下に少し余白を追加 */
     }
 
     .title {
