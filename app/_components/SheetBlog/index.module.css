@@ -1,6 +1,6 @@
 .container {
     position: relative;
-    width: 80%; /* 幅を100%にして、親要素に合わせて広がるように */
+    width: 90%; /* 幅を100%にして、親要素に合わせて広がるように */
     max-width: 1200px; /* 最大幅を指定（必要に応じて調整） */
     margin: auto;
     padding: 80px;
