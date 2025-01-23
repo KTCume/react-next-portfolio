@@ -15,6 +15,7 @@
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     transition: background-color 0.2s ease, transform 0.2s ease;
+    overflow: hidden;
 }
 
 .link:hover {
@@ -38,6 +39,9 @@
     margin-bottom: 8px;
     color: #333;
     transition: color 0.2s ease;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .meta {
@@ -46,32 +50,52 @@
     gap: 12px;
     font-size: 0.9rem;
     color: #777;
+    flex-wrap: nowrap;
 }
 
-/* モバイル対応スタイル */
-@media (max-width: 640px) {
+/* モバイル対応スタイル: 横型維持 */
+@media (max-width: 768px) {
     .link {
-        display: block; /* 縦配置に変更 */
-        padding: 14px;
-        border-left: 4px solid #4a90e2;
-        border-radius: 8px;
+        gap: 16px; /* ギャップを縮小 */
+        padding: 12px; /* パディングを縮小 */
     }
 
     .image {
-        width: 100%; /* 幅をボックスサイズに合わせる */
-        height: auto; /* 高さを自動調整 */
-        max-width: 100%; /* 最大幅を100%に制限 */
-        aspect-ratio: 3 / 2; /* 縦横比を3:2に固定 */
-        border-radius: 8px;
-        margin-bottom: 12px; /* 下に少し余白を追加 */
+        width: 120px; /* モバイルで画像を縮小 */
+        height: 80px;
     }
 
     .title {
-        font-size: 1.2rem;
-        margin-bottom: 8px;
+        font-size: 1.1rem; /* タイトルを縮小 */
     }
 
     .meta {
-        font-size: 0.85rem;
+        font-size: 0.85rem; /* メタ情報を縮小 */
+        gap: 8px; /* ギャップを縮小 */
+    }
+}
+
+/* 最小画面対応: 縦型レイアウト */
+@media (max-width: 600px) {
+    .link {
+        display: block; /* 縦型レイアウトに変更 */
+        gap: 8px; /* ギャップを縮小 */
+        padding: 10px; /* パディングをさらに縮小 */
+    }
+
+    .image {
+        width: 100%; /* 画像幅をボックスいっぱいに調整 */
+        max-width: 300px; /* 最大幅を制限 */
+        height: auto; /* 高さを自動調整 */
+        margin-bottom: 8px; /* 下に余白を追加 */
+    }
+
+    .title {
+        font-size: 1rem; /* タイトルをさらに縮小 */
+        margin-bottom: 6px;
+    }
+
+    .meta {
+        font-size: 0.8rem; /* メタ情報をさらに縮小 */
     }
 }
