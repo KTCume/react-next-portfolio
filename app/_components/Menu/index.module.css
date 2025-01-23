@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 
 
 /* メニューのロゴ部分 */
@@ -30,11 +30,13 @@
 .items li a {
   text-decoration: none;
   color: inherit;
-  font-family: 'Playfair Display', serif; /* 読みやすいエレガントなフォント */
-  font-weight: bold;
-  font-size: 18px;
+  font-family: 'Abril Fatface', serif; /* モダンで目を引くデザイン */
+  font-weight: 200; /* フォントの太さを調整 */
+  font-size: 20px; /* 読みやすいサイズ */
+  letter-spacing: 0.5px; /* 少し文字間隔を広げて洗練された印象に */
   transition: color 0.3s ease, transform 0.3s ease;
 }
+
 
 .items li:hover a {
   color: #ffcc66; /* 見やすく目に優しい明るいオレンジ */

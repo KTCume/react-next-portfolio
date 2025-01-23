@@ -55,16 +55,16 @@ export default function Menu() {
         )}
         <ul className={styles.items}>
           <li>
-            <Link href="/about" onClick={handleLinkClick}>自己紹介</Link>
+            <Link href="/about" onClick={handleLinkClick}>About</Link>
           </li>
           <li>
-            <Link href="/news" onClick={handleLinkClick}>ブログ</Link>
+            <Link href="/news" onClick={handleLinkClick}>Blog</Link>
           </li>
           <li>
-            <Link href="/skill" onClick={handleLinkClick}>スキル</Link>
+            <Link href="/skill" onClick={handleLinkClick}>Skill</Link>
           </li>
           <li>
-            <Link href="/contact" onClick={handleLinkClick}>お問い合わせ</Link>
+            <Link href="/contact" onClick={handleLinkClick}>Contact</Link>
           </li>
         </ul>
         <button className={cx(styles.button, styles.close)} onClick={close}>
