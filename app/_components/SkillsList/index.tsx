@@ -37,6 +37,7 @@ export default function SkillsList({ skills }: Props) {
                         </div>
                         <dl className={styles.content}>
                             <dt className={styles.title}>{article.name}</dt>
+                            <dt className={styles.position}>{article.position}</dt>
                         </dl>
                     </Link>
                 </li>

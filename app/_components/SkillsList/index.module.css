@@ -58,6 +58,11 @@
     text-overflow: ellipsis;
 }
 
+.position {
+    font-size: 18px;
+    color: #333;
+}
+
 .link {
     text-decoration: none;
     color: inherit;
