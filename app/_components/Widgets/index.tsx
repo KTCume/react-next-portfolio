@@ -23,22 +23,22 @@ const WidgetItem: React.FC<{ imageSrc: string; content: string; detail: string; 
 const WidgetList: React.FC = () => {
   const items = [
     {
-      imageSrc: "/blog.jpg", // 画像URL
+      imageSrc: "/blog.jpg",
       content: "ブログ ",
       detail: "取り組みについて日々追加していきます。",
-      link: "/news", // ニュースリンク
+      link: "/news",
     },
     {
-      imageSrc: "/pasokon.jpg", // 画像URL
+      imageSrc: "/pasokon.jpg",
       content: "スキル一覧",
       detail: "学習中のスキルを掲載しています。",
-      link: "/skill", // 天気情報リンク
+      link: "/skills", // 天気情報リンク
     },
     {
-      imageSrc: "/webkiso.jpg", // 画像URL
-      content: "カレンダー ",
-      detail: "今日の予定を確認しましょう。",
-      link: "/calendar", // カレンダーリンク
+      imageSrc: "/webkiso.jpg",
+      content: "お問い合わせ ",
+      detail: "質問やご相談を受け付けています。",
+      link: "/contact",
     },
   ];
 

@@ -39,13 +39,22 @@ export default async function Home() {
       <h2 className={styles.newsTitle}>Blog</h2>
       <NewsList news={newsData.contents} />
       <div className={styles.newsLink}>
-        <ButtonLink href="/news">ブログ一覧へ</ButtonLink>
+        <ButtonLink href="/news">ブログ一覧</ButtonLink>
       </div>
     </section>
     <section className={styles.profile}>
         <h2 className={styles.profileTitle}>PROFILE</h2>
+          <Image
+          className={styles.profileImage}
+            src="/profile.jpg"
+            alt=""
+            width={200}
+            height={200}
+          />
         <p className={styles.profileDescription}>
-          私は梅井太貴です。ITエンジニアとして、さまざまなプロジェクトに取り組んでいます。このサイトでは、私の作品やブログをご覧いただけます。
+          私は梅井太貴です。<br/>
+          専門学生として、日々さまざまな学習に取り組んでいます。<br/>
+          このサイトでは、私の作品やブログをご覧いただけます。
         </p>
         <div className={styles.profileLink}>
           <ButtonLink href="/about">プロフィールを見る</ButtonLink>
@@ -55,7 +64,7 @@ export default async function Home() {
       <h2 className={styles.skillsTitle}>Skill</h2>
       <SkillsList skills={skillsData.contents} />
       <div className={styles.skillsLink}>
-        <ButtonLink href="/skills">スキル一覧へ</ButtonLink>
+        <ButtonLink href="/skills">スキル一覧</ButtonLink>
       </div>
     </section>
       <section className={styles.widgetsSection}>
