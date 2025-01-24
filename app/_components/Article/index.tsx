@@ -12,6 +12,7 @@ type Props = {
 export default function Article({ data }: Props) {
     return (
         <main>
+            <section className={styles.top}>
             <h1 className={styles.title}>{data.title}</h1>
             <p className={styles.description}>{data.description}</p>
             <div className={styles.meta}>
@@ -38,6 +39,7 @@ export default function Article({ data }: Props) {
                 __html: data.content,
             }}
             />
+            </section>
         </main>
     );
 }
