@@ -1,8 +1,8 @@
 import { notFound } from "next/navigation";
-import { getSkillsList } from "@/app/_libs/microcms";
-import SkillsList from "@/app/_components/SkillsList";
+import { getSkillList } from "@/app/_libs/microcms";
+import SkillList from "@/app/_components/SkillList";
 import Pagination from "@/app/_components/Pagination";
-import { SKILLS_LIST_LIMIT } from "@/app/_constants";
+import { SKILL_LIST_LIMIT } from "@/app/_constants";
 
 type Props = {
     params: {
@@ -17,14 +17,14 @@ export default async function Page({ params }: Props) {
         notFound();
     }
 
-    const { contents: skills, totalCount } = await getSkillsList({
-        limit: SKILLS_LIST_LIMIT,
-        offset: SKILLS_LIST_LIMIT * (current - 1),
+    const { contents: skill, totalCount } = await getSkillList({
+        limit: SKILL_LIST_LIMIT,
+        offset: SKILL_LIST_LIMIT * (current - 1),
     });
 
     return (
         <>
-        <SkillsList skills={skills} />
+        <SkillList skill={skill} />
         <Pagination totalCount={totalCount} current={current} />
         </>
     );

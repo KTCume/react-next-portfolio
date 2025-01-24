@@ -37,7 +37,7 @@
   z-index: -1;
 }
 
-.news {
+.blog {
   position: relative;
   background-color: #fff;
   width: 840px;
@@ -46,7 +46,7 @@
   border-radius: var(--border-radius);
 }
 
-.newsTitle {
+.blogTitle {
   font-size: 2.8rem; /* 文字サイズを大きくして見やすく */
   font-family: 'Playfair Display', serif;
   transform: skewX(-10deg); /* 文字を右に少し傾ける */
@@ -56,7 +56,7 @@
   position: relative; /* 疑似要素の基準を設定 */
 }
 
-.newsTitle::after {
+.blogTitle::after {
   content: ""; /* 空の内容を設定 */
   display: block; /* ブロック要素として扱う */
   width: 70%; /* 下線の幅を調整 */
@@ -72,7 +72,7 @@
   opacity: 0.9; /* 若干の透明度を追加 */
 }
 
-.newsLink {
+.blogLink {
   position: absolute;
   right: -40px;
   bottom: -40px;
@@ -133,7 +133,7 @@
   background-color: #005fa3; /* ホバー時に濃いブルー */
 }
 
-.skills {
+.skill {
   position: relative;
   background-color: #fff;
   width: 90%;
@@ -142,7 +142,7 @@
   border-radius: var(--border-radius);
 }
 
-.skillsTitle {
+.skillTitle {
   font-size: 2.8rem; /* 文字サイズを大きくして見やすく */
   font-family: 'Playfair Display', serif;
   transform: skewX(-10deg); /* 文字を右に少し傾ける */
@@ -152,7 +152,7 @@
   position: relative; /* 疑似要素の基準を設定 */
 }
 
-.skillsTitle::after {
+.skillTitle::after {
   content: ""; /* 空の内容を設定 */
   display: block; /* ブロック要素として扱う */
   width: 70%; /* 下線の幅を調整 */
@@ -168,7 +168,7 @@
   opacity: 0.9; /* 若干の透明度を追加 */
 }
 
-.skillsLink {
+.skillLink {
   position: absolute;
   bottom: 100px;
   left: 50%; /* 横方向の中央 */
@@ -181,10 +181,10 @@
 }
 
 @media (max-width: 1000px) {
-  .news {
+  .blog {
     width: calc(100% - 160px);
   }
-  .skills {
+  .skill {
     width: calc(100% - 160px);
   }
 }
@@ -214,12 +214,12 @@
     z-index: -1;
   }
 
-  .news {
+  .blog {
     width: calc(100% - 32px);
     padding: 16px 24px;          
   }
 
-  .newsLink {
+  .blogLink {
     position: relative;
     right: auto;
     bottom: auto;
@@ -238,12 +238,12 @@
     font-size: 0.9rem;
   }
 
-  .skills {
+  .skill {
     width: calc(100% - 32px);
     padding: 16px 24px;          
   }
 
-  .skillsLink {
+  .skillLink {
     position: relative;
     right: auto;
     bottom: auto;

@@ -1,19 +1,19 @@
 import styles from "./page.module.css";
 import Image from "next/image";
-import { getNewsList } from "@/app/_libs/microcms";
-import { TOP_NEWS_LIMIT } from "@/app/_constants";
-import { getSkillsList } from "@/app/_libs/microcms";
-import { TOP_SKILLS_LIMIT } from "@/app/_constants";
-import NewsList from "@/app/_components/NewsList";
-import SkillsList from "@/app/_components/SkillsList";
+import { getBlogList } from "@/app/_libs/microcms";
+import { TOP_BLOG_LIMIT } from "@/app/_constants";
+import { getSkillList } from "@/app/_libs/microcms";
+import { TOP_SKILL_LIMIT } from "@/app/_constants";
+import BlogList from "@/app/_components/BlogList";
+import SkillList from "@/app/_components/SkillList";
 import ButtonLink from "@/app/_components/ButtonLink";
 import Widgets from "./_components/Widgets";
 
 export default async function Home() {
   // ニュースとスキルのリストを同時に取得
-  const [newsData, skillsData] = await Promise.all([
-    getNewsList({ limit: TOP_NEWS_LIMIT }),
-    getSkillsList({ limit: TOP_SKILLS_LIMIT }),
+  const [blogData, skillData] = await Promise.all([
+    getBlogList({ limit: TOP_BLOG_LIMIT }),
+    getSkillList({ limit: TOP_SKILL_LIMIT }),
   ]);
 
   return(
@@ -35,11 +35,11 @@ export default async function Home() {
     sizes="100vw"
     />
     </section>
-    <section className={styles.news}>
-      <h2 className={styles.newsTitle}>Blog</h2>
-      <NewsList news={newsData.contents} />
-      <div className={styles.newsLink}>
-        <ButtonLink href="/news">ブログ一覧</ButtonLink>
+    <section className={styles.blog}>
+      <h2 className={styles.blogTitle}>Blog</h2>
+      <BlogList blog={blogData.contents} />
+      <div className={styles.blogLink}>
+        <ButtonLink href="/blog">ブログ一覧</ButtonLink>
       </div>
     </section>
     <section className={styles.profile}>
@@ -60,11 +60,11 @@ export default async function Home() {
           <ButtonLink href="/about">プロフィールを見る</ButtonLink>
         </div>
       </section>
-      <section className={styles.skills}>
-      <h2 className={styles.skillsTitle}>Skill</h2>
-      <SkillsList skills={skillsData.contents} />
-      <div className={styles.skillsLink}>
-        <ButtonLink href="/skills">スキル一覧</ButtonLink>
+      <section className={styles.skill}>
+      <h2 className={styles.skillTitle}>Skill</h2>
+      <SkillList skill={skillData.contents} />
+      <div className={styles.skillLink}>
+        <ButtonLink href="/skill">スキル一覧</ButtonLink>
       </div>
     </section>
       <section className={styles.widgetsSection}>

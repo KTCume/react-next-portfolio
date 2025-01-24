@@ -1,9 +1,9 @@
 import Image from "next/image";
-import type { Skills } from "@/app/_libs/microcms";
+import type { Skill } from "@/app/_libs/microcms";
 import styles from "./index.module.css";
 
 type Props = {
-    data: Skills;
+    data: Skill;
 };
 
 export default function Article({ data }: Props) {

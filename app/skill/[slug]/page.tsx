@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { getSkillsDetail } from "@/app/_libs/microcms";
-import ArticleSkills from "@/app/_components/ArticleSkills";
+import { getSkillDetail } from "@/app/_libs/microcms";
+import ArticleSkill from "@/app/_components/ArticleSkill";
 import ButtonLink from "@/app/_components/ButtonLink";
 import styles from "./page.module.css";
 
@@ -16,7 +16,7 @@ type Props = {
 
 export async function generateMetadata
 ({ params, searchParams }: Props): Promise<Metadata> {
-    const data = await getSkillsDetail(params.slug, {
+    const data = await getSkillDetail(params.slug, {
         draftKey: searchParams.dk,
     });
 
@@ -31,15 +31,15 @@ export async function generateMetadata
 }
 
 export default async function Page({ params, searchParams }:Props) {
-    const data = await getSkillsDetail(params.slug, {
+    const data = await getSkillDetail(params.slug, {
         draftKey: searchParams.dk,
     }).catch(notFound);
 
     return (
         <>
-        <ArticleSkills data={data} />
+        <ArticleSkill data={data} />
         <div className={styles.footer}>
-            <ButtonLink href="/skills">スキル一覧へ</ButtonLink>
+            <ButtonLink href="/skill">スキル一覧へ</ButtonLink>
             </div>
         </>
     );

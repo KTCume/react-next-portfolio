@@ -3,7 +3,7 @@
 
 
 /* 各セクションに黒い線を追加 */
-.interest, .skillstop {
+.interest, .skilltop {
     border-bottom: 2px solid #000; /* 黒い線を追加 */
     padding-bottom: 30px; /* 余白を追加して線とコンテンツの間にスペースを作る */
     margin-bottom: 30px; /* セクション間の間隔 */
@@ -105,7 +105,7 @@
 }
 
 /* 学習中のスキルテキスト */
-.skillsTitle {
+.skillTitle {
     margin-top: 40px;
     font-family: 'M PLUS Rounded 1c', sans-serif; /* 丸みのあるおしゃれなフォントを指定 */
     font-size: 3.5rem; /* タイトルを大きく */
@@ -116,7 +116,7 @@
     line-height: 1.2; /* 行間を広げて可読性を高める */
 }
 
-.skillsText {
+.skillText {
     font-size: 1.6rem;
     color: #374151;
     font-family: 'M PLUS Rounded 1c', sans-serif;

@@ -1,21 +1,21 @@
-import { getNewsList } from "@/app/_libs/microcms";
-import NewsList from "@/app/_components/NewsList";
+import { getBlogList } from "@/app/_libs/microcms";
+import BlogList from "@/app/_components/BlogList";
 import Pagination from "@/app/_components/Pagination";
 import SearchField from "@/app/_components/SearchField";
-import { NEWS_LIST_LIMIT } from "@/app/_constants";
+import { BLOG_LIST_LIMIT } from "@/app/_constants";
 
 
 export const revalidate = 60;
 
 export default async function Page() {
-    const { contents: news, totalCount } = await getNewsList({
-        limit: NEWS_LIST_LIMIT,
+    const { contents: blog, totalCount } = await getBlogList({
+        limit: BLOG_LIST_LIMIT,
     });
 
     return (
         <>
         <SearchField />
-        <NewsList news={news} />
+        <BlogList blog={blog} />
         <Pagination totalCount={totalCount} />
         </>
     );

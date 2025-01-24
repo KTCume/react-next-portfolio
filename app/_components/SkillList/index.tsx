@@ -1,21 +1,21 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./index.module.css";
-import { Skills } from "@/app/_libs/microcms";
+import { Skill } from "@/app/_libs/microcms";
 
 type Props = {
-    skills: Skills[];
+    skill: Skill[];
 };
 
-export default function SkillsList({ skills }: Props) {
-    if (skills.length === 0) {
+export default function SkillList({ skill }: Props) {
+    if (skill.length === 0) {
         return <p>記事がありません。</p>;
     }
     return (
         <div className={styles.container}>
-            {skills.map((article) => (
+            {skill.map((article) => (
                 <li key={article.id} className={styles.list}>
-                    <Link href={`/skills/${article.id}`} className={styles.link}>
+                    <Link href={`/skill/${article.id}`} className={styles.link}>
                         <div className={styles.imageContainer}>
                             {article.image ? (
                                 <Image

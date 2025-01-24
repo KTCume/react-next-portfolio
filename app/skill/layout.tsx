@@ -11,7 +11,7 @@ type Props = {
 
 export const revalidate = 60;
 
-export default function SkillsLayout({ children }: Props) {
+export default function SkillLayout({ children }: Props) {
     return (
         <>
         <Hero title="Skill" sub="スキル" />

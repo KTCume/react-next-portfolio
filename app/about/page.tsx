@@ -38,10 +38,10 @@ export default function Page() {
             </section>
 
             {/* 学習中のスキル セクション */}
-            <section className={styles.skillstop}>
-                <h2 className={styles.skillsTitle}>学習中のスキル</h2>
-                <div className={styles.skillsContainer}>
-                    <p className={styles.skillsText}>
+            <section className={styles.skilltop}>
+                <h2 className={styles.skillTitle}>学習中のスキル</h2>
+                <div className={styles.skillContainer}>
+                    <p className={styles.skillText}>
                     現在、HTML、CSS、TypeScript、Reactを中心に学習しています。<br />
                     HTMLとCSSでWebページの基本構造やデザインを学び、レスポンシブデザインやモダンなレイアウトの実装に取り組んでいます。<br />
                     Reactではコンポーネントの再利用性を意識したUI構築を目指し、特にTypeScriptを活用して型安全なコードの重要性を学習中です。<br />

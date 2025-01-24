@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { getNewsDetail } from "@/app/_libs/microcms";
+import { getBlogDetail } from "@/app/_libs/microcms";
 import Article from "@/app/_components/Article";
 import ButtonLink from "@/app/_components/ButtonLink";
 import styles from "./page.module.css";
@@ -16,7 +16,7 @@ type Props = {
 
 export async function generateMetadata
 ({ params, searchParams }: Props): Promise<Metadata> {
-    const data = await getNewsDetail(params.slug, {
+    const data = await getBlogDetail(params.slug, {
         draftKey: searchParams.dk,
     });
 
@@ -31,7 +31,7 @@ export async function generateMetadata
 }
 
 export default async function Page({ params, searchParams }:Props) {
-    const data = await getNewsDetail(params.slug, {
+    const data = await getBlogDetail(params.slug, {
         draftKey: searchParams.dk,
     }).catch(notFound);
 
@@ -39,7 +39,7 @@ export default async function Page({ params, searchParams }:Props) {
         <>
         <Article data={data} />
         <div className={styles.footer}>
-            <ButtonLink href="/news">ブログ一覧へ</ButtonLink>
+            <ButtonLink href="/blog">ブログ一覧へ</ButtonLink>
             </div>
         </>
     );

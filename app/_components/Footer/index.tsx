@@ -10,7 +10,7 @@ export default function Footer() {
                         <Link href="/about">自己紹介</Link>
                     </li>
                     <li className="styles.item">
-                        <Link href="/news">ブログ</Link>
+                        <Link href="/blog">ブログ</Link>
                     </li>
                     <li className="styles.item">
                         <Link href="/skill">スキル</Link>

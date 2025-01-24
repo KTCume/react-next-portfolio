@@ -26,13 +26,13 @@ const WidgetList: React.FC = () => {
       imageSrc: "/blog.jpg",
       content: "ブログ ",
       detail: "取り組みについて日々追加していきます。",
-      link: "/news",
+      link: "/blog",
     },
     {
       imageSrc: "/pasokon.jpg",
       content: "スキル一覧",
       detail: "学習中のスキルを掲載しています。",
-      link: "/skills", // 天気情報リンク
+      link: "/skill", // 天気情報リンク
     },
     {
       imageSrc: "/webkiso.jpg",
