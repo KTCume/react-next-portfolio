@@ -42,7 +42,7 @@
   width: 100%;
   height: auto;
   margin-bottom: 64px;
-  border-radius: 16px; /* 角を丸くする */
+  border-radius: 20px; /* 角を丸くする */
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4); /* 影を強調 */
 }
   

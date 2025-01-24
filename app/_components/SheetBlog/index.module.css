@@ -6,3 +6,9 @@
     padding: 80px;
     box-sizing: border-box; /* パディングを含めた幅を調整 */
 }
+
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+    }
+}
