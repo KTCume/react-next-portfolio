@@ -51,11 +51,16 @@
   }
   
   .content > h1 {
-    font-size: 2rem;
-    font-weight: bold;
-    border-bottom: 1px solid var(--color-border);
-    margin: 2.8rem 0 1rem;
-  }
+      font-size: 2rem;
+      font-weight: bold;
+      background: linear-gradient(to right, #095d7f, #5fb2ff, #0681b2); /* グラデーションの色 */
+      background-size: 100% 6px; /* 下線の太さ */
+      background-position: 0 100%; /* 下線の位置 */
+      background-repeat: no-repeat;
+      padding-bottom: 10px; /* 下線との間隔調整 */
+      margin: 2.8rem 0 1rem;
+    }
+    
   
   .content > h2 {
     font-size: 1.6rem;
