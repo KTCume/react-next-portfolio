@@ -13,7 +13,7 @@ export default function RootLayout({ children }: Props) {
     return (
     <>
     <Hero title="About Me" sub="自己紹介" />
-    <Sheet>{children}</Sheet>;
+    <Sheet>{children}</Sheet>
     </>
     );
 }
