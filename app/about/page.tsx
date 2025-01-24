@@ -18,10 +18,10 @@ export default function Page() {
                     <h2 className={styles.name}></h2>
                     <p className={styles.profileText}>
                         私の名前は梅井 太貴です。<br />
-                        現在、京都デザイン＆テクノロジー専門学校のスーパーITエンジニア専攻でITを学んでいます。<br />
-
-                        私の趣味は、アニメ、マンガそしてK-POPです。<br />
-                        また、好きな食べ物はラーメンとハンバーガーです。<br />
+                        現在、京都デザイン＆テクノロジー専門学校でITを学んでいます。<br />
+                        スーパーITエンジニア専攻 1年<br />
+                        趣味は、アニメ、マンガとK-POPです。<br />
+                        また、好きな食べ物はラーメンとハンバーグです。<br />
                     </p>
                     </div>
                 </div>
