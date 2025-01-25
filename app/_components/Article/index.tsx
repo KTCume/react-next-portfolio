@@ -16,12 +16,17 @@ export default function Article({ data }: Props) {
             <h1 className={styles.title}>{data.title}</h1>
             <p className={styles.description}>{data.description}</p>
             <div className={styles.meta}>
+                {
+                // ここにカテゴリーをMapで表示するマップの中にリンクとカテゴリーを両方入れる
+                data.category.map()
                 <Link
                 href={`/blog/category/${data.category.id}`}
                 className={styles.categoryLink}
                 >
                 <Category category={data.category} />
                 </Link>
+                }
+                
                 <Date date={data.publishedAt ?? data.createdAt} />
             </div>
             {data.thumbnail && (
