@@ -18,14 +18,17 @@ export default function Article({ data }: Props) {
             <div className={styles.meta}>
                 {
                 // ここにカテゴリーをMapで表示するマップの中にリンクとカテゴリーを両方入れる
-                data.category.map()
-                <Link
-                href={`/blog/category/${data.category.id}`}
-                className={styles.categoryLink}
-                >
-                <Category category={data.category} />
-                </Link>
+                data.category.map((category) => (
+                    <Link
+                    key={category.id}
+                    href={`/blog/category/${category.id}`}
+                    className={styles.categoryLink}
+                    >
+                    <Category category={category} />
+                    </Link>
+                ))
                 }
+
                 
                 <Date date={data.publishedAt ?? data.createdAt} />
             </div>

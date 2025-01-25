@@ -28,7 +28,10 @@ export default function BlogList({ blog }: Props) {
                         <dl className={styles.content}>
                             <dt className={styles.title}>{article.title}</dt>
                             <dd className={styles.meta}>
-                                <Category category={article.category} />
+                            {Array.isArray(article.category) &&
+                            article.category.map((category) => (
+                                <Category key={category.id} category={category} />
+                            ))}
                                 <Date date={article.publishedAt ?? article.createdAt} />
                             </dd>
                         </dl>
