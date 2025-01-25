@@ -14,10 +14,11 @@ export default function BlogList({ blog }: Props) {
         return <p>記事がありません。</p>;
     }
     return (
-        <ul>
+        <div className={styles.container}>
             {blog.map((article) => (
                 <li key={article.id} className={styles.list}>
                     <Link href={`/blog/${article.id}`} className={styles.link}>
+                    <div className={styles.imageContainer}>
                         <Image
                             src={article.thumbnail ? article.thumbnail.url : "/no-image.png"}
                             alt={article.title || "No Image"}
@@ -25,6 +26,7 @@ export default function BlogList({ blog }: Props) {
                             width={150}
                             height={100} // サイズを統一
                         />
+                        </div>
                         <dl className={styles.content}>
                             <dt className={styles.title}>{article.title}</dt>
                             <dd className={styles.meta}>
@@ -38,6 +40,6 @@ export default function BlogList({ blog }: Props) {
                     </Link>
                 </li>
             ))}
-        </ul>
+        </div>
     );
 }
