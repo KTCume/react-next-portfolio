@@ -1,7 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
 .date {
     display: flex;
     align-items: center;
     gap: 8px;
     margin: 0.8rem 0;
-    font-size: 1rem;
+    margin-left: 20px;
+    font-size: 1.5rem; /* 大きめで視覚的に強調 */
+    font-family: 'DM Serif Display', serif; /* 高級感のあるフォント */
+    font-weight: 400; /* 通常の太さ */
+    color: #2c3e50; /* 落ち着いた色合い */
+    letter-spacing: 0.05em; /* 文字間を調整 */
 }
