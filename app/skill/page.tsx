@@ -13,8 +13,8 @@ export default async function Page() {
 
     return (
         <section className={styles.top}>
-          <h1 className={styles.title}>学習中</h1>
-          <p className={styles.text}>↓詳細はクリックで</p>
+            <h1 className={styles.title}>学習中のスキル</h1>
+            <p className={styles.text}>↓詳細はクリックで</p>
         <SkillList skill={skill} />
         </section>
     );
