@@ -1,8 +1,19 @@
 .container {
     position: relative;
     width: 100%;
-    max-width: 1200px;
     margin: auto;
-    padding: 30px;
-    box-sizing: border-box; /* パディングを含めた幅を調整 */
+    padding: 40px 80px;
+    background-color: rgb(250, 246, 239);
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 40px 10px;
+    }
 }

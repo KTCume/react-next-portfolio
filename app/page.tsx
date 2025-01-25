@@ -37,6 +37,8 @@ export default async function Home() {
     sizes="100vw"
     />
     </section>
+
+    <section className={styles.topContainer}>
     <section className={styles.blog}>
       <h2 className={styles.blogTitle}>Blog</h2>
       <BlogList blog={blogData.contents} />
@@ -71,6 +73,7 @@ export default async function Home() {
     </section>
       <section className={styles.widgetsSection}>
                 <Widgets />
+      </section>
       </section>
       </PageTransition>
     </>

@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
 
+.topContainer {
+  background-color: rgb(250, 246, 239);
+}
+
 .top {
   position: relative;
   display: flex;
@@ -135,7 +139,6 @@
 
 .skill {
   position: relative;
-  background-color: #fff;
   width: 90%;
   margin: -40px auto 0;
   padding: 24px 40px;
