@@ -28,12 +28,10 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <body>
-        <PageTransition>
         <Header />
         {children}
         <Footer />
         <ScrollToTopButton />
-        </PageTransition>
         </body>
         <GoogleAnalytics gaId="G-XXX" />
     </html>
