@@ -5,8 +5,8 @@
     align-items: center;
     gap: 8px;
     margin: 0.8rem 0;
-    margin-left: 20px;
-    font-size: 1.5rem; /* 大きめで視覚的に強調 */
+    padding: 0 8px;
+    font-size: 1.4rem; /* 大きめで視覚的に強調 */
     font-family: 'DM Serif Display', serif; /* 高級感のあるフォント */
     font-weight: 400; /* 通常の太さ */
     color: #2c3e50; /* 落ち着いた色合い */

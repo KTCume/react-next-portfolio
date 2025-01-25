@@ -16,6 +16,7 @@ export default function Article({ data }: Props) {
             <h1 className={styles.title}>{data.title}</h1>
             <p className={styles.description}>{data.description}</p>
             <div className={styles.meta}>
+            <Date date={data.publishedAt ?? data.createdAt} />
                 {
                 // ここにカテゴリーをMapで表示するマップの中にリンクとカテゴリーを両方入れる
                 data.category.map((category) => (
@@ -28,10 +29,8 @@ export default function Article({ data }: Props) {
                     </Link>
                 ))
                 }
-
-                
-                <Date date={data.publishedAt ?? data.createdAt} />
             </div>
+            
             {data.thumbnail && (
                 <Image
                 src={data.thumbnail.url}

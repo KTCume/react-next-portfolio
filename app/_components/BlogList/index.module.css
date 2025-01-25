@@ -37,7 +37,7 @@
 .title {
     font-size: 1.3rem;
     font-weight: 600;
-    margin-bottom: 8px;
+    margin: 15px auto 20px;
     color: #333;
     transition: color 0.2s ease;
     overflow: hidden;
