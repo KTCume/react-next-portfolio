@@ -48,6 +48,7 @@ export default async function Home() {
     </section>
     <section className={styles.profile}>
         <h2 className={styles.profileTitle}>PROFILE</h2>
+        <div className={styles.profileContainer}>
           <Image
           className={styles.profileImage}
             src="/profile.jpg"
@@ -55,11 +56,17 @@ export default async function Home() {
             width={200}
             height={200}
           />
-        <p className={styles.profileDescription}>
-          私は梅井太貴です。<br/>
-          専門学生として、日々さまざまな学習に取り組んでいます。<br/>
-          このサイトでは、私の作品やブログをご覧いただけます。
+          <div className={styles.profileTextContainer}>
+        <h2 className={styles.name}>梅井 太貴</h2>
+        <p className={styles.profileText}>
+          2005年生まれ、京都府出身<br />
+          昨年4月に京都デザイン＆テクノロジー専門学校に入学し、現在ITを学んでいます。<br />
+          スーパーITエンジニア専攻の1年です。<br />
+          趣味は、アニメ、マンガとK-POPです。<br />
+          好きな食べ物はラーメンとハンバーグです。<br />
         </p>
+        </div>
+        </div>
         <div className={styles.profileLink}>
           <ButtonLink href="/about">プロフィールを見る</ButtonLink>
         </div>

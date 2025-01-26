@@ -47,6 +47,15 @@ export default function Page() {
                     </p>
                 </div>
             </section>
+
+            <section className={styles.hobby}>
+            <h2 className={styles.hobbyTitle}>好きなもの・趣味</h2>
+                <div className={styles.hobbyContainer}>
+                    <p className={styles.hobbyText}>
+                        
+                    </p>
+                </div>
+            </section>
         </div>
     );
 }

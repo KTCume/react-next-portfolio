@@ -9,12 +9,13 @@
     margin: 0 auto;
     width: 100%;
     max-width: 850px;
+    padding: 0 50px 50px;
 }
 
 .title {
     font-size: 4.5rem;
     font-weight: 700;
-    margin-top: 60px;
+    margin-top: 80px;
     margin-bottom: 40px;
     text-align: center;
     color: #af88f3;
@@ -56,16 +57,15 @@
 }
 
 .profileText {
-    font-size: 1.2rem;
-    color: #374151;
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.8;
-    white-space: pre-wrap; /* 改行を反映させる */
-    margin: 20px 0;
+    font-size: 1rem;
+    margin-bottom: 24px;
+    color: #666;
+    max-width: 600px; /* テキストの横幅を制限して見やすく */
 }
 
 .interest {
     background-color: rgb(247, 241, 231);
+    padding: 0 200px;
 }
 
 .interestImage {
@@ -83,45 +83,45 @@
     color: #afafff;
     letter-spacing: 1.5px; /* 文字間隔を広げる */
     line-height: 1.2; /* 行間を広げて可読性を高める */
-    padding: 0 80px;
-    padding-top: 70px;
+    padding-top: 90px;
 }
 
 .interestText {
-    font-size: 1.3rem;
+    font-size: 20px;
     color: #374151;
     font-family: 'M PLUS Rounded 1c', sans-serif;
     line-height: 1.8;
     white-space: pre-wrap; /* 改行を反映させる */
     margin: 20px 0;
-    padding: 0 80px;
-}
-
-.skilltop {
-    background-color: #e4e4e4;
 }
 
 /* 学習中のスキルテキスト */
 .skillTitle {
-    margin-top: 40px;
+    margin-top: 70px;
     font-family: 'M PLUS Rounded 1c', sans-serif; /* 丸みのあるおしゃれなフォントを指定 */
     font-size: 3rem;
     font-weight: 700; /* 軽めの太さ */
     color: #fbb167;
     letter-spacing: 1.5px; /* 文字間隔を広げる */
     line-height: 1.2; /* 行間を広げて可読性を高める */
-    padding: 0 80px;
 }
 
 .skillText {
-    font-size: 1.3rem;
+    font-size: 20px;
     color: #374151;
     font-family: 'M PLUS Rounded 1c', sans-serif;
     line-height: 1.8;
     white-space: pre-wrap; /* 改行を反映させる */
     margin: 20px 0;
-    padding: 0 80px;
-    padding-bottom: 70px;
+    padding-bottom: 90px;
+}
+
+.hobbyTitle {
+    margin-top: 70px;
+    font-family: 'M PLUS Rounded 1c', sans-serif; /* 丸みのあるおしゃれなフォントを指定 */
+    font-size: 3rem;
+    font-weight: 600; /* 軽めの太さ */
+    color: #282828;
 }
 
 @media (max-width: 960px) {
@@ -141,5 +141,23 @@
 
     .profileText {
         font-size: 1.1rem; /* テキストの文字サイズを調整 */
+    }
+}
+
+@media (max-width: 768px) {
+    .interest {
+        padding: 0 50px;
+    }
+    .interestTitle {
+        font-size: 2rem;
+    }
+    .interestText {
+        font-size: 17px;
+    }
+    .skillTitle {
+        font-size: 2rem;
+    }
+    .skillText {
+        font-size: 17px;
     }
 }
