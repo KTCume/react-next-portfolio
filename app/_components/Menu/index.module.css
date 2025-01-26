@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 
-
 /* メニューのロゴ部分 */
 .logoContainer {
   display: flex;
@@ -15,11 +14,11 @@
   object-fit: contain;  /* アスペクト比を保ちながら収める */
 }
 
-
 .items {
   display: flex;
   color: #eae9e9; /* 少し明るめの文字色に変更 */
   gap: 40px;
+  margin-right: 40px;
 }
 
 .items li {
@@ -36,7 +35,6 @@
   letter-spacing: 0.5px; /* 少し文字間隔を広げて洗練された印象に */
   transition: color 0.3s ease, transform 0.3s ease;
 }
-
 
 .items li:hover a {
   color: #ffcc66; /* 見やすく目に優しい明るいオレンジ */
@@ -61,6 +59,7 @@
 
 .button {
   display: none;
+  margin-right: 30px;
 }
 
 @media (max-width: 640px) {
@@ -85,6 +84,7 @@
     flex-direction: column;
     gap: 30px;
     text-align: center;
+    margin-right: 0;
   }
 
   .items li:hover::after {
