@@ -9,9 +9,14 @@
     border: none;
     overflow: hidden;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-    text-align: center;
     display: flex;
     flex-direction: column;
+    transition: opacity 0.3s ease; /* ホバー時アニメーション */
+}
+
+.list:hover {
+    opacity: 0.6; /* ホバー時に薄くなる */
+    border-radius: 10px 10px 35px 35px;
 }
 
 .link {
@@ -23,7 +28,12 @@
     width: 100%;
     aspect-ratio: 16 / 10; /* 縦横比を変更して画像を少し縦長に */
     overflow: hidden; /* はみ出した部分を隠す */
-    border: 1px solid #454545;
+    border: 1px solid #454545; /* 黒い枠線 */
+    border-radius: 0; /* 初期状態で角丸なし */
+}
+
+.imageContainer:hover {
+    border-radius: 10px 10px 0 0;
 }
 
 .image {
@@ -32,12 +42,17 @@
     object-fit: cover; /* 画像を切り取って親要素にフィット */
 }
 
+.imageContainer:hover .image {
+    border-radius: 10px 10px 0 0;
+}
+
+
 
 /* タイトル */
 .title {
-    font-size: 1.3rem;
-    font-weight: 600;
-    margin: 15px auto 20px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin: 0px 10px 10px;
     color: #333;
     transition: color 0.2s ease;
     overflow: hidden;
@@ -65,7 +80,7 @@
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 680px) {
     .container {
         grid-template-columns: 1fr;
     }

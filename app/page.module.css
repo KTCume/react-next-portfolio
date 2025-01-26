@@ -43,9 +43,9 @@
 
 .blog {
   position: relative;
-  width: 90%;
+  width: 100%;
   margin: auto;
-  padding: 24px 40px;
+  padding: 24px 20px;
   border-radius: var(--border-radius);
 }
 
@@ -77,8 +77,10 @@
 
 .blogLink {
   position: absolute;
-  right: -40px;
-  bottom: -40px;
+  bottom: 100px;
+  left: 50%; /* 横方向の中央 */
+  top: 100%;  /* 縦方向の中央 */
+  transform: translate(-50%, -50%); /* 中央基準に調整 */
 }
 
 .profile {
@@ -184,7 +186,7 @@
 
 @media (max-width: 1000px) {
   .blog {
-    width: calc(100% - 160px);
+    
   }
   .skill {
     width: calc(100% - 160px);
@@ -225,7 +227,7 @@
     position: relative;
     right: auto;
     bottom: auto;
-    margin-top: 16px;
+    margin-top: 50px;
   }
 
   .profile {

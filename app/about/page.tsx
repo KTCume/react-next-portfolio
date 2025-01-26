@@ -15,11 +15,12 @@ export default function Page() {
                         height={300}
                     />
                     <div className={styles.profileTextContainer}>
-                    <h2 className={styles.name}></h2>
+                    <h2 className={styles.name}>梅井 太貴</h2>
+                    <h3 className={styles.subname}>Umei Taiki</h3>
                     <p className={styles.profileText}>
-                        私の名前は梅井 太貴です。<br />
-                        現在、京都デザイン＆テクノロジー専門学校でITを学んでいます。<br />
-                        スーパーITエンジニア専攻 1年<br />
+                        2005年生まれ、京都府出身<br />
+                        昨年4月に京都デザイン＆テクノロジー専門学校に入学し、現在ITを学んでいます。<br />
+                        スーパーITエンジニア専攻の1年です。<br />
                         趣味は、アニメ、マンガとK-POPです。<br />
                         好きな食べ物はラーメンとハンバーグです。<br />
                     </p>
