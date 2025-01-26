@@ -57,6 +57,40 @@
   left: 0; /* 左から広がるように */
 }
 
+/* ハンバーガーメニューアイコン */
+.burger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.bar {
+  height: 4px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+/* メニューが開いた時のアニメーション */
+.burger.open .bar:nth-child(1) {
+  transform: rotate(45deg);
+  position: relative;
+  top: 8px;
+}
+
+.burger.open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.burger.open .bar:nth-child(3) {
+  transform: rotate(-45deg);
+  position: relative;
+  top: -8px;
+}
+
+/* ボタンの初期状態 */
 .button {
   display: none;
   margin-right: 30px;
@@ -91,7 +125,6 @@
     width: 30%; /* ホバー時に下線を短くする */
     left: 35%; /* 中央に配置 */
   }
-  
 
   /* ロゴ部分の表示/非表示を制御 */
   .logoContainer {
@@ -108,11 +141,5 @@
     background: none;
     border: none;
     cursor: pointer;
-  }
-
-  .close {
-    position: absolute;
-    top: 24px;
-    right: 16px;
   }
 }

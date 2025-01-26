@@ -9,8 +9,7 @@ import styles from './index.module.css';
 export default function Menu() {
   const [isOpen, setOpen] = useState<boolean>(false);
 
-  const open = () => setOpen(true);
-  const close = () => setOpen(false);
+  const toggleMenu = () => setOpen(!isOpen);  // メニューのトグル（開閉）
 
   // リンクがクリックされたときにメニューを閉じる関数
   const handleLinkClick = () => {
@@ -34,6 +33,19 @@ export default function Menu() {
       window.removeEventListener('resize', handleResize); // クリーンアップ
     };
   }, []);
+
+  // メニューが開いたときにスクロールを禁止する
+  useEffect(() => {
+    if (isOpen) {
+      // メニューが開いた時、html と body にスクロール禁止を適用
+      document.body.style.overflow = 'hidden'; // メニューが開いたときにスクロール禁止
+      document.documentElement.style.overflow = 'hidden'; // html のスクロールも禁止
+    } else {
+      // メニューが閉じた時、スクロールを元に戻す
+      document.body.style.overflow = ''; // メニューが閉じたときにスクロールを元に戻す
+      document.documentElement.style.overflow = ''; // html のスクロールを元に戻す
+    }
+  }, [isOpen]);
 
   return (
     <div>
@@ -67,18 +79,15 @@ export default function Menu() {
             <Link href="/contact" onClick={handleLinkClick}>Contact</Link>
           </li>
         </ul>
-        <button className={cx(styles.button, styles.close)} onClick={close}>
-          <Image
-            src="/close.svg"
-            alt="閉じる"
-            width={24}
-            height={24}
-            priority
-          />
-        </button>
       </nav>
-      <button className={styles.button} onClick={open}>
-        <Image src="/menu.svg" alt="メニュー" width={24} height={24} />
+
+      {/* ハンバーガーメニュー */}
+      <button className={styles.button} onClick={toggleMenu}>
+        <div className={cx(styles.burger, isOpen && styles.open)}>
+          <span className={styles.bar}></span>
+          <span className={styles.bar}></span>
+          <span className={styles.bar}></span>
+        </div>
       </button>
     </div>
   );
