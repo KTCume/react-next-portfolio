@@ -1,23 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Rounded+M%2B+1c:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap');
 
-
-/* 各セクションに黒い線を追加 */
-.interest, .skilltop {
-    border-bottom: 2px solid #000; /* 黒い線を追加 */
-    padding-bottom: 30px; /* 余白を追加して線とコンテンツの間にスペースを作る */
-    margin-bottom: 30px; /* セクション間の間隔 */
-}
-.interest {
-    border-top: 2px solid #000;
-}
-
 .top {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 70px auto;
+    margin: 0 auto;
     width: 100%;
     max-width: 850px;
 }
@@ -25,7 +14,7 @@
 .title {
     font-size: 4.5rem;
     font-weight: 700;
-    margin-top: -100px;
+    margin-top: 60px;
     margin-bottom: 40px;
     text-align: center;
     color: #af88f3;
@@ -75,6 +64,10 @@
     margin: 20px 0;
 }
 
+.interest {
+    background-color: #e4e4e4;
+}
+
 .interestImage {
     width: 100%;
     max-width: 600px; /* 画像の最大幅を指定 */
@@ -84,44 +77,51 @@
 }
 
 .interestTitle {
-    margin-top: 40px;
     font-family: 'M PLUS Rounded 1c', sans-serif; /* 丸みのあるおしゃれなフォントを指定 */
-    font-size: 3.5rem; /* タイトルを大きく */
+    font-size: 3rem;
     font-weight: 700; /* 軽めの太さ */
     color: #afafff;
-    text-align: center; /* 中央揃え */
     letter-spacing: 1.5px; /* 文字間隔を広げる */
     line-height: 1.2; /* 行間を広げて可読性を高める */
+    padding: 0 80px;
+    padding-top: 70px;
 }
 
 .interestText {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     color: #374151;
     font-family: 'M PLUS Rounded 1c', sans-serif;
     line-height: 1.8;
     white-space: pre-wrap; /* 改行を反映させる */
     margin: 20px 0;
+    padding: 0 80px;
+}
+
+.skilltop {
+    background-color: #e4e4e4;
 }
 
 /* 学習中のスキルテキスト */
 .skillTitle {
     margin-top: 40px;
     font-family: 'M PLUS Rounded 1c', sans-serif; /* 丸みのあるおしゃれなフォントを指定 */
-    font-size: 3.5rem; /* タイトルを大きく */
+    font-size: 3rem;
     font-weight: 700; /* 軽めの太さ */
-    color: #ff7f9f;
-    text-align: center; /* 中央揃え */
+    color: #fbb167;
     letter-spacing: 1.5px; /* 文字間隔を広げる */
     line-height: 1.2; /* 行間を広げて可読性を高める */
+    padding: 0 80px;
 }
 
 .skillText {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     color: #374151;
     font-family: 'M PLUS Rounded 1c', sans-serif;
     line-height: 1.8;
     white-space: pre-wrap; /* 改行を反映させる */
     margin: 20px 0;
+    padding: 0 80px;
+    padding-bottom: 70px;
 }
 
 @media (max-width: 960px) {

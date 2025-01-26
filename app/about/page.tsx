@@ -36,10 +36,6 @@ export default function Page() {
                         高校では特に何かを作るようなことはしていませんでしたが、唯一眠くならずに集中できた授業がIT関連の授業でした。その時間だけは不思議と興味を持って取り組むことができ、ITの世界に魅力を感じるきっかけになりました。
                     </p>
                 </div>
-            </section>
-
-            {/* 学習中のスキル セクション */}
-            <section className={styles.skilltop}>
                 <h2 className={styles.skillTitle}>学習中のスキル</h2>
                 <div className={styles.skillContainer}>
                     <p className={styles.skillText}>
