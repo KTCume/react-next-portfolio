@@ -10,16 +10,16 @@ interface PageTransitionProps {
 export default function PageTransition({ children }: PageTransitionProps) {
   return (
     <motion.div
-      initial={{ opacity: 0, scale: 0.95, filter: 'blur(10px)' }}  // 初期状態でぼかしを追加
-      animate={{ opacity: 1, scale: 1, filter: 'blur(0px)' }}      // 表示時にぼかしを解除
-      exit={{ opacity: 0, scale: 0.95, filter: 'blur(10px)' }}     // 退場時にぼかしを追加
+      initial={{ opacity: 0, filter: 'blur(20px)' }} // 初期状態で透明＆強いぼかし
+      animate={{ opacity: 1, filter: 'blur(0px)' }}  // 表示時に透明度を高め、ぼかし解除
+      exit={{ opacity: 0, filter: 'blur(20px)' }}    // 退場時に透明＆強いぼかし
       transition={{
-        duration: 0.8,
-        ease: [0.25, 0.8, 0.25, 1],
+        duration: 1.0,  // アニメーション時間を長く設定
+        ease: [0.3, 0.6, 0.4, 1], // ゆっくりと滑らかな変化
       }}
       style={{
         overflow: 'hidden',
-        willChange: 'transform, opacity, filter',  // filterも追加してパフォーマンスを最適化
+        willChange: 'opacity, filter', // フィルタと透明度のパフォーマンスを最適化
       }}
     >
       {children}
