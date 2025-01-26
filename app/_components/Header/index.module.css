@@ -6,11 +6,7 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    background: linear-gradient(135deg, #5d59d4, #595bd4, #534fd2); /* さわやかで柔らかいグラデーション */
 }
-
-
-
 
 .logoLink {
     display: flex;
