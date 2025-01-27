@@ -90,7 +90,6 @@
   justify-content: center;
   padding: 48px 16px;
   background-color: #e7d7f7; /* 背景を淡いグレーに設定 */
-  /* border-top: 1px solid #ddd; セクション間の区切り線 */
   margin: 80px auto; /* 上下中央揃え用の余白 */
   width: 100%;
   border-radius: 50%; /* 丸 */
@@ -208,9 +207,6 @@
 }
 
 @media (max-width: 1000px) {
-  .blog {
-    
-  }
   .skill {
     width: calc(100% - 160px);
   }
@@ -224,6 +220,12 @@
 @media (max-width: 768px) {
   .profileContainer {
     padding: 0 50px;
+  }
+  .name {
+    font-size: 2.5rem;
+  }
+  .profileText {
+    font-size: 16px;
   }
 }
 
@@ -286,5 +288,15 @@
     right: auto;
     bottom: auto;
     margin-top: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  
+  .name {
+    font-size: 2rem;
+  }
+  .profileText {
+    font-size: 1rem;
   }
 }
