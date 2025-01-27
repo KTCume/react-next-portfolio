@@ -42,7 +42,6 @@
     object-fit: cover; /* 画像が丸に収まるように調整 */
 }
 
-/* テキストコンテナ */
 .profileTextContainer {
     display: flex;
     flex-direction: column; /* 名前とテキストを縦並び */
@@ -113,14 +112,6 @@
     white-space: pre-wrap; /* 改行を反映させる */
     margin: 20px 0;
     padding-bottom: 90px;
-}
-
-.hobbyTitle {
-    margin-top: 70px;
-    font-family: 'M PLUS Rounded 1c', sans-serif; /* 丸みのあるおしゃれなフォントを指定 */
-    font-size: 3rem;
-    font-weight: 600; /* 軽めの太さ */
-    color: #282828;
 }
 
 @media (max-width: 960px) {
