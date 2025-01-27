@@ -46,8 +46,6 @@
 .profileTextContainer {
     display: flex;
     flex-direction: column; /* 名前とテキストを縦並び */
-    align-items: center; /* テキストを中央揃え */
-    text-align: center; /* テキストを中央寄せ */
 }
 
 .name {
