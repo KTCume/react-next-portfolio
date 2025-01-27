@@ -1,17 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@400;700&display=swap');
+
 
 .title {
     font-size: 4.5rem;
-    font-family: 'M PLUS Rounded 1c', sans-serif; /* 丸みのあるおしゃれなフォントを指定 */
-    font-weight: 700;
-    color: #1c1c1e;
-    letter-spacing: 0.15em; /* 文字間隔をを広げる */
+    font-family: 'Kaisei Decol', serif; /* モダンでおしゃれなセリフ体 */
+    font-weight: 700; /* 高級感を強調する太さ */
+    color: #2b2b2b; /* 落ち着いたダークトーン */
+    letter-spacing: 0.1em; /* 適度な文字間隔で読みやすく */
     text-align: center;
+    line-height: 1.4; /* 上品さを感じさせる行間 */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15); /* 繊細な影で立体感をプラス */
+    padding: 0 1rem; /* 横方向に余白を加えて全体のバランスを調整 */
 }
 
 .text {
     text-align: center;
     color: #ef4343;
+    font-family: 'Kaisei Decol', sans-serif; /* おしゃれでかわいい雰囲気のフォントを指定 */
+    font-weight: 700; /* 太字でサブタイトルらしさを強調 */
 }
 
 @media (max-width: 680px) {
