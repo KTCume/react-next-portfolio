@@ -30,7 +30,7 @@
 .profileContainer {
     display: flex;
     align-items: center; /* 縦方向に中央揃え */
-    justify-content: flex-start; /* 左寄せ */
+    justify-content: center; /* 横方向に中央揃え */
     gap: 30px; /* 画像とテキストの間隔 */
     width: 100%;
     max-width: 1200px;
@@ -46,7 +46,8 @@
 .profileTextContainer {
     display: flex;
     flex-direction: column; /* 名前とテキストを縦並び */
-    justify-content: center; /* テキストを中央揃え */
+    align-items: center; /* テキストを中央揃え */
+    text-align: center; /* テキストを中央寄せ */
 }
 
 .name {
