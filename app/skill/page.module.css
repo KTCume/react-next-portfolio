@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@400;700&display=swap');
 
-
 .title {
     font-size: 4.5rem;
-    font-family: 'Kaisei Decol', serif; /* モダンでおしゃれなセリフ体 */
-    font-weight: 700; /* 高級感を強調する太さ */
+    font-family: 'Roboto', 'Noto Sans', 'Helvetica Neue', sans-serif; /* ゴシック系のフォントを指定 */
+    font-weight: 700; /* 太字 */
     color: #2b2b2b; /* 落ち着いたダークトーン */
     letter-spacing: 0.1em; /* 適度な文字間隔で読みやすく */
     text-align: center;
