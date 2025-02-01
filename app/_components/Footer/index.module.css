@@ -5,7 +5,7 @@
     color: #f4f4f4; /* 文字色をやや明るくして、背景とのコントラストを調整 */
     text-align: center;
     font-size: 1rem;
-    margin-top: 80px;
+    margin-top: 15px;
     border-top: 1px solid rgba(255, 255, 255, 0.2); /* 透明感のある細い境界線 */
     position: relative;
     border-radius: 10px 10px 0 0; /* フッターの角を丸くして優雅に */
@@ -23,11 +23,14 @@
     font-size: 1.1rem;
     white-space: nowrap;
     letter-spacing: 0.5px; /* 文字間隔を広げて読みやすく */
+    flex-wrap: wrap; /* アイテムを折り返し可能にする */
 }
 
 .item {
     position: relative;
     transition: transform 0.3s ease-in-out;
+    flex-basis: 30%; /* 各アイテムが占める幅を30%に設定 */
+    text-align: center;
 }
 
 /* リンクのデザイン */
@@ -44,17 +47,38 @@
 }
 
 /* スマホ用レスポンシブデザイン */
-@media (max-width: 640px) {
+@media (max-width: 768px) {
+    .footer {
+        padding: 40px 30px; /* 上下のパディングを調整して圧縮 */
+    }
+
     .items {
-        flex-wrap: wrap; /* 要素を折り返し可能に */
-        gap: 20px; /* 要素間の余白を調整 */
-        justify-content: center; /* 要素を中央揃え */
+        gap: 15px; /* アイテム間の余白を調整 */
     }
+
     .item {
-        width: 100%; /* 各アイテムを1行に */
-        text-align: center; /* テキストを中央揃え */
+        flex-basis: 45%; /* スマホでの表示時は各アイテムが45%を占めるようにする */
     }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 30px 20px; /* より圧縮されたパディング */
+    }
+
+    .items {
+        gap: 10px; /* アイテム間の余白をさらに縮小 */
+    }
+
     .items a {
-        font-size: 1rem; /* モバイル向けに文字サイズを調整 */
+        font-size: 1rem; /* フォントサイズを小さく調整 */
+    }
+
+    .cr {
+        font-size: 0.9rem; /* コピーライトのフォントサイズも調整 */
+    }
+
+    .item {
+        flex-basis: 50%; /* さらに小さい画面では各アイテムが50%を占める */
     }
 }
