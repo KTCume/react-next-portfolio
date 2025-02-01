@@ -63,7 +63,7 @@
   display: block; /* ブロック要素として扱う */
   width: 70%; /* 下線の幅を調整 */
   height: 6px; /* 下線の太さを調整 */
-  background: linear-gradient(135deg, #ff7eb3, #ff758c, #ffc3a0); /* グラデーションに角度と多色を追加 */
+  background: linear-gradient(135deg, #a07eff, #956ffc, #ab8cff); /* グラデーションに角度と多色を追加 */
   margin: 0 auto; /* 中央揃え */
   position: absolute; /* 位置を調整 */
   bottom: -10px; /* 下線を文字の下に配置 */
