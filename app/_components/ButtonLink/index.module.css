@@ -10,9 +10,25 @@
     transition: background 0.3s ease, transform 0.2s ease;
     background-size: 400% 400%; /* グラデーションを広げる */
     animation: gradientBackground 5s ease infinite; /* グラデーションをアニメーションさせる */
+    position: relative; /* 擬似要素の位置調整のため */
 }
 
+/* ボタンの右側に大なり矢印を追加 */
+.button::after {
+    content: ">"; /* 大なり矢印を追加 */
+    font-size: 1.5rem; /* サイズ調整 */
+    font-weight: bold; /* 太めに */
+    position: absolute;
+    right: 20px; /* ボタンの右端からさらに右側に配置 */
+    top: 50%;
+    transform: translateY(-50%); /* 垂直方向に中央揃え */
+    transition: right 0.3s ease;
+}
 
+/* ホバー時に矢印を少し移動 */
+.button:hover::after {
+    right: 16px; /* 少し左に移動してアニメーション */
+}
 
 .button:hover {
     opacity: 0.8;
@@ -22,5 +38,10 @@
     .button {
         padding: 14px 28px; /* スマホ用に少しだけ縮小 */
         width: 100%;
+    }
+
+    /* モバイルでも矢印を維持 */
+    .button::after {
+        right: 15px; /* 画面が小さい場合でも右側に調整 */
     }
 }
