@@ -22,7 +22,7 @@ export default async function Home() {
     <>
     <PageTransition>
       <AnimatedText />
-    <section className={styles.top}>
+    {/* <section className={styles.top}>
     <div>
       <h1 className={styles.title}>PORTFOLIO</h1>
       <p className={styles.description}>
@@ -38,7 +38,7 @@ export default async function Home() {
     priority
     sizes="100vw"
     />
-    </section>
+    </section> */}
 
     <section className={styles.topContainer}>
     <section className={styles.blog}>

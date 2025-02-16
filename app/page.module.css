@@ -4,7 +4,7 @@
   background-color: rgb(250, 246, 239);
 }
 
-.top {
+/* .top {
   position: relative;
   display: flex;
   align-items: center;
@@ -39,7 +39,7 @@
   align-items: center;
   justify-content: center;
   z-index: -1;
-}
+} */
 
 .blog {
   position: relative;
