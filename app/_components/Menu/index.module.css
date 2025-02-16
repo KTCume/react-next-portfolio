@@ -31,7 +31,7 @@
   color: inherit;
   font-family: 'Abril Fatface', serif; /* モダンで目を引くデザイン */
   font-weight: 200; /* フォントの太さを調整 */
-  font-size: 27px;
+  font-size: 25px;
   letter-spacing: 0.5px; /* 少し文字間隔を広げて洗練された印象に */
   transition: color 0.3s ease, transform 0.3s ease;
 }
