@@ -1,0 +1,35 @@
+.logoWrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  
+  .st0 {
+    fill: none;
+    stroke: #000000;
+    stroke-width: 4;
+    stroke-miterlimit: 10;
+  }
+  
+  .st1 {
+    fill: none;
+    stroke: #000000;
+    stroke-width: 4;
+  }
+  
+  .st0,
+  .st1 {
+    stroke-dasharray: 1200;
+    stroke-dashoffset: 0;
+    animation: dash 5s linear forwards;
+  }
+  
+  @keyframes dash {
+    from {
+      stroke-dashoffset: 1200;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  
