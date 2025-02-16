@@ -3,9 +3,8 @@
 .body {
   font-family: 'Playfair Display', serif; /* フォント設定をPlayfair Displayに変更 */
   font-weight: bold;
-  background-color: #181818;
-  color: #000;
-  font-size: 16px;
+  background-color: #000000;
+  font-size: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
