@@ -9,6 +9,7 @@ import SkillList from "@/app/_components/SkillList";
 import ButtonLink from "@/app/_components/ButtonLink";
 import Widgets from "./_components/Widgets";
 import PageTransition from "./_components/PageTransition";
+import AnimatedText from "./_components/AnimatedText";
 
 export default async function Home() {
   // ニュースとスキルのリストを同時に取得
@@ -20,6 +21,7 @@ export default async function Home() {
   return(
     <>
     <PageTransition>
+      <AnimatedText />
     <section className={styles.top}>
     <div>
       <h1 className={styles.title}>PORTFOLIO</h1>
