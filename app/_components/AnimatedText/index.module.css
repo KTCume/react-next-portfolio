@@ -109,7 +109,6 @@
   font-family: 'Playfair Display', serif;
   font-weight: bold;
   background: linear-gradient(145deg, #1a1a1a, #333);
-  font-size: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -132,7 +131,7 @@
 .span {
   display: inline-block;
   color: #ebebeb;
-  font-size: 4em;
+  font-size: 6rem;
   transform-origin: 50% 70%;
   transform: rotateX(90deg);
   animation: flipUp 8s infinite cubic-bezier(0.68, -0.55, 0.26, 1.55);
@@ -177,4 +176,18 @@
 }
 .span:nth-child(11) {
   animation-delay: 2.6s;
+}
+
+
+
+@media (max-width: 768px) {
+  .span {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .span {
+    font-size: 3.8rem;
+  }
 }
