@@ -247,6 +247,9 @@
   .subspan:nth-child(15) {
     animation-delay: 3.6s;
   }
+  .subspan:nth-child(16) {
+    animation-delay: 3.8s;
+  }
   
   /* レスポンシブ対応 */
   @media (max-width: 768px) {

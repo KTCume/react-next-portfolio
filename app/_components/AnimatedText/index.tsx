@@ -19,21 +19,22 @@ const AnimatedText = () => {
       </div>
 
       <div className={styles.subcontainer}>
-        <span className={styles.subspan}>ポ</span>
-        <span className={styles.subspan}>ー</span>
-        <span className={styles.subspan}>ト</span>
-        <span className={styles.subspan}>フ</span>
-        <span className={styles.subspan}>ォ</span>
-        <span className={styles.subspan}>リ</span>
-        <span className={styles.subspan}>オ</span>
-        <span className={styles.subspan}>サ</span>
-        <span className={styles.subspan}>イ</span>
-        <span className={styles.subspan}>ト</span>
-        <span className={styles.subspan}>へ</span>
-        <span className={styles.subspan}>よ</span>
+        <span className={styles.subspan}>ご</span>
+        <span className={styles.subspan}>覧</span>
+        <span className={styles.subspan}>い</span>
+        <span className={styles.subspan}>た</span>
+        <span className={styles.subspan}>だ</span>
+        <span className={styles.subspan}>き</span>
+        <span className={styles.subspan}>あ</span>
+        <span className={styles.subspan}>り</span>
+        <span className={styles.subspan}>が</span>
+        <span className={styles.subspan}>と</span>
         <span className={styles.subspan}>う</span>
-        <span className={styles.subspan}>こ</span>
-        <span className={styles.subspan}>そ</span>
+        <span className={styles.subspan}>ご</span>
+        <span className={styles.subspan}>ざ</span>
+        <span className={styles.subspan}>い</span>
+        <span className={styles.subspan}>ま</span>
+        <span className={styles.subspan}>す</span>
       </div>
 
       {/* 雪のエフェクト */}
