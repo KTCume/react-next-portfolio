@@ -36,6 +36,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transform: skewX(-10deg); /* 文字を右に少し傾ける */
   }
   
   /* 各文字のアニメーションスタイル */
@@ -100,4 +101,3 @@
       font-size: 1.5rem;
     }
   }
-  
