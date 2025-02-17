@@ -168,12 +168,7 @@
     animation-delay: 2.2s;
   }
   .span:nth-child(9) {
-    animation-delay: 2.2s;
-  }
-  .span:nth-child(10) {
     animation-delay: 2.4s;
-    display: block;
-    margin: 0;
   }
   
   .subcontainer {
