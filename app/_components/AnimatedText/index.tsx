@@ -8,14 +8,14 @@ const AnimatedText = () => {
     <div className={styles.body}> {/* CSSモジュールのクラス名を適用 */}
       <div className={styles.container}> {/* CSSモジュールのクラス名を適用 */}
         <span className={styles.span}>P</span>
-        <span className={styles.span}>O</span>
-        <span className={styles.span}>R</span>
-        <span className={styles.span}>T</span>
-        <span className={styles.span}>F</span>
-        <span className={styles.span}>O</span>
-        <span className={styles.span}>L</span>
-        <span className={styles.span}>I</span>
-        <span className={styles.span}>O</span>
+        <span className={styles.span}>o</span>
+        <span className={styles.span}>r</span>
+        <span className={styles.span}>t</span>
+        <span className={styles.span}>f</span>
+        <span className={styles.span}>o</span>
+        <span className={styles.span}>l</span>
+        <span className={styles.span}>i</span>
+        <span className={styles.span}>o</span>
       </div>
 
       <div className={styles.subcontainer}>
